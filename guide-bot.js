@@ -25,13 +25,13 @@
     egyptian: 'library/egyptian.html', celtic: 'library/celtic.html',
     recipes: 'library/recipes.html', reading: 'library/reading.html',
     glossary: 'library/glossary.html',
-    wheel: 'index.html#wheel', wisdom: 'index.html#wisdom',
-    keepsakes: 'index.html#keepsakes', about: 'index.html#about',
-    join: 'index.html#join', share: 'index.html#share',
-    designs: 'index.html#designs', community: 'index.html#community',
-    thisweek: 'index.html#this-week', policies: 'index.html#policies',
-    shipping: 'index.html#shipping', returns: 'index.html#returns',
-    privacy: 'index.html#privacy', accessibility: 'index.html#accessibility'
+    wheel: 'wheel.html', wisdom: 'wisdom.html',
+    keepsakes: 'keepsakes.html', about: 'about.html',
+    join: 'index.html#join', share: 'share.html',
+    designs: 'ravens.html#designs', community: 'community.html',
+    thisweek: 'this-week.html', policies: 'policies.html',
+    shipping: 'policies.html#shipping', returns: 'policies.html#returns',
+    privacy: 'policies.html#privacy', accessibility: 'policies.html#accessibility'
   };
 
   /* ---------- where am I? (prefix from this script's own src) ---------- */
@@ -505,6 +505,7 @@
 
     if (/returning the light/.test(q)) { showOnline(); return; }
     if (/online event|online gathering|virtual|zoom/.test(q)) { showOnline(); return; }
+    if (/this week/.test(q)) { linkAnswer('What’s on this week — the moon, the next festival, and the gatherings near the grove — is on the This Week page.', 'This week in the grove', 'thisweek'); return; }
     if (/event|gathering|yule ball|masquerade|candlelight|solstice|what'?s on|whats on|near me|nearby|close to|around (here|me)|december|christmas|retreat|conference/.test(q)) {
       if (visitorLoc) { showNearby(); } else { askLocation(); }
       return;
@@ -513,6 +514,7 @@
       addBot([
         { t: 'text', x: 'We’d love it. The Share a Recipe form takes a minute, and Laura reads every submission herself.' },
         { t: 'link', label: 'Share a Recipe', href: RECIPE_FORM, external: true },
+        { t: 'link', label: 'Share a Recipe page', href: rootLink(PAGES.share) },
         { t: 'link', label: 'Prefer paper? Download the PDF', href: rootLink('share-recipe-form.pdf') }
       ]);
       return;
@@ -521,6 +523,7 @@
       addBot([
         { t: 'text', x: 'Tell us what you’d like to see in the shop — it takes a minute, and there’s no obligation.' },
         { t: 'link', label: 'Suggest a Design', href: DESIGN_FORM, external: true },
+        { t: 'link', label: 'Suggest a Design on the Ravens page', href: rootLink(PAGES.designs) },
         { t: 'link', label: 'Prefer paper? Download the PDF', href: rootLink('suggest-design-form.pdf') }
       ]);
       return;
@@ -533,6 +536,12 @@
       ]);
       return;
     }
+    /* Policies first: "shop policies" must reach the Policies page, not the shop. */
+    if (/shipping/.test(q)) { linkAnswer('Shipping follows the details on each Etsy listing — the shop’s own shipping notes are on the Policies page.', 'Shipping', 'shipping'); return; }
+    if (/return/.test(q)) { linkAnswer('Returns follow the details on each Etsy listing — the shop’s own returns notes are on the Policies page.', 'Returns', 'returns'); return; }
+    if (/privacy/.test(q)) { linkAnswer('Privacy — what the shop and the site do with your details — is on the Policies page.', 'Privacy', 'privacy'); return; }
+    if (/accessib/.test(q)) { linkAnswer('Accessibility — how the site is built to be usable by everyone — is on the Policies page.', 'Accessibility', 'accessibility'); return; }
+    if (/polic/.test(q)) { linkAnswer('The shop policies, privacy, and accessibility notes are all on the Policies page.', 'Policies', 'policies'); return; }
     if (/gift|shop|buy|etsy|order|price|cost|how much|hoodie|tee|t-shirt|mug|tote|ornament|product|design/.test(q)) {
       addBot([
         { t: 'text', x: 'Everything in the shop is made to order through our Etsy shop — you’ll find the pieces, and their prices, on each listing.' },
@@ -541,8 +550,8 @@
       ]);
       return;
     }
-    if (/rune/.test(q)) { linkAnswer('The rune draw lives on the homepage, under Wisdom & Runes — one draw a day, with a verse to carry.', 'Draw a rune', 'wisdom'); return; }
-    if (/wheel|festival|season|sabbat|imbolc|samhain|beltane|lughnasadh|mabon|ostara|equinox/.test(q)) { linkAnswer('The Wheel of the Year on the homepage follows the seasons and their festivals, one spoke at a time.', 'See the Wheel of the Year', 'wheel'); return; }
+    if (/rune/.test(q)) { linkAnswer('The rune draw lives on the Wisdom & Runes page — one draw a day, with a verse to carry.', 'Draw a rune', 'wisdom'); return; }
+    if (/wheel|festival|season|sabbat|imbolc|samhain|beltane|lughnasadh|mabon|ostara|equinox/.test(q)) { linkAnswer('The Wheel of the Year page follows the seasons and their festivals, one spoke at a time.', 'See the Wheel of the Year', 'wheel'); return; }
     if (/heathen|asatru|norse|viking/.test(q)) {
       addBot([
         { t: 'text', x: 'Heathenry is home turf here. The Library has a full introduction — honest about what’s old, what’s new, and what’s not ours to claim.' },
@@ -569,12 +578,9 @@
       ]);
       return;
     }
-    if (/shipping/.test(q)) { linkAnswer('Shipping follows the details on each Etsy listing — the shop’s own shipping notes are under Policies on the homepage.', 'Shipping', 'shipping'); return; }
-    if (/return/.test(q)) { linkAnswer('Returns follow the details on each Etsy listing — the shop’s own returns notes are under Policies on the homepage.', 'Returns', 'returns'); return; }
-    if (/polic|privacy|accessib/.test(q)) { linkAnswer('The shop policies, privacy, and accessibility notes are all on the homepage.', 'Policies', 'policies'); return; }
     if (/moon/.test(q)) { linkAnswer('Tonight’s moon — how lit it is, and when the next full moon falls — is in the Focus space on the homepage. Open it from the menu.', 'Homepage', 'home'); return; }
     if (/keepsake|save|bookmark/.test(q)) { linkAnswer('Keepsakes let you save a rune draw or a verse on this device, and come back to it later.', 'Keepsakes', 'keepsakes'); return; }
-    if (/communit|facebook|instagram|tiktok|youtube|threads|follow|social/.test(q)) { linkAnswer('The grove is on TikTok, Instagram, YouTube, X, and Threads — the links are in the community section at the foot of the homepage.', 'Community', 'community'); return; }
+    if (/communit|facebook|instagram|tiktok|youtube|threads|follow|social/.test(q)) { linkAnswer('The grove is on TikTok, Instagram, YouTube, X, and Threads — the links are on the Community page.', 'Community', 'community'); return; }
     if (/about|who is laura|who are you|are you (a )?(human|real|person)|are you laura/.test(q)) { linkAnswer('Laura keeps the grove — she reads the recipes, tends the shop, and looks after this little corner of the web. I’m just her helper here on the page, not a person.', 'About the Grove', 'about'); return; }
     if (/what is (the grove|this)|what('| i)s this (place|site)/.test(q)) { linkAnswer('A little pagan corner of the web — a library, a shop, and daily tools like the rune draw. Come as you are; the fire is already lit.', 'About the Grove', 'about'); return; }
     if (/^(hi|hello|hey|good (morning|afternoon|evening))\b/.test(q)) { greet(); return; }
