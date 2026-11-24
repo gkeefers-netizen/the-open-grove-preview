@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagan and Proud Pentacle Mug — The Open Grove</title>
+<meta name="description" content="Pagan and Proud Pentacle Mug in green and gold. This white ceramic mug features a green and gold illustration of an upright pentacle framed by a leafy laur">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3ecda;--card:#fdf8ea;--ink:#1d2b1f;--ink-soft:#3f4f3d;--moss:#2e4a33;--amber:#8a5a0e;--line:#c9b98d;--radius:14px;--shadow:0 10px 30px rgba(30,53,36,.16)}
+@media (prefers-color-scheme: dark){:root{--bg:#111810;--card:#1b261a;--ink:#f0e9cf;--ink-soft:#c3cbb0;--moss:#a8c4a2;--amber:#e2a83a;--line:#3d4a33;--shadow:0 10px 30px rgba(0,0,0,.5)}}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font-family:"Alegreya",Georgia,serif;font-size:18px;line-height:1.65;background:var(--bg)}
+h1{font-family:"Cormorant Garamond",Georgia,serif;line-height:1.08;margin:0;font-weight:700;font-size:2.2rem}
+a{color:var(--amber)}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{padding:22px 0;border-bottom:1px solid var(--line)}
+header a{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:1.4rem;color:var(--ink);text-decoration:none}
+main{padding:36px 0 60px}
+.product-img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:28px}
+.price{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.6rem;font-weight:700;margin:10px 0 4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:13px 22px;min-height:52px;font-weight:700;text-decoration:none;border:1px solid transparent;cursor:pointer;font-family:"Alegreya Sans",sans-serif;font-size:1rem;background:var(--moss);color:#fdf8ea;margin:18px 0 6px}
+@media (prefers-color-scheme: dark){.btn{background:#33543a;color:#f5efdb}}
+.note{font-size:.95rem;color:var(--ink-soft)}
+.back{margin-top:34px}
+footer{padding:28px 0 60px;border-top:1px solid var(--line);color:var(--ink-soft);font-size:.95rem}
+/* Page transitions — walking from one part of the grove to another. */
+.grove-veil{position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#14231a;color:#eec27a;opacity:0;pointer-events:none;transition:opacity .45s ease}
+.grove-veil.on{opacity:1;pointer-events:all}
+.grove-veil-mark{font-size:2.6rem;line-height:1;text-shadow:0 0 24px rgba(238,194,122,.8);animation:grove-moon-pulse 2.4s ease-in-out infinite}
+.grove-veil-word{font-family:"Alegreya Sans",sans-serif;letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;color:#e3c87e}
+@keyframes grove-moon-pulse{0%,100%{opacity:.75}50%{opacity:1}}
+@media (prefers-reduced-motion: reduce){.grove-veil{transition:none}.grove-veil-mark{animation:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="/">The Open Grove</a></div></header>
+<main><div class="wrap">
+<img class="product-img" src="https://images-api.printify.com/mockup/6af0ea11625d37ecf2040a84/65216/6310/pagan-and-proud-pentacle-mug.jpg?camera_label=front&amp;revision=1794175629464&amp;s=2048" alt="Pagan and Proud Pentacle Mug">
+<h1>Pagan and Proud Pentacle Mug</h1>
+<p class="price">$14.99</p>
+<p>Pagan and Proud Pentacle Mug in green and gold. This white ceramic mug features a green and gold illustration of an upright pentacle framed by a leafy laurel wreath - with the words &#x27;Pagan and Proud&#x27; in rustic lettering. The pentacle, a five-pointed star enclosed in a circle, is a widely used emblem in modern pagan and earth-centered spiritual paths - a bold way to show pride in your beliefs.</p>
+<a class="btn" href="https://opengrovegoods.printify.me/product/34151746" target="_blank" rel="noopener">Buy on the Pop-Up Store</a>
+<p class="note">Printed to order by our print partner and shipped from the United States. <a href="/#shipping">Shipping</a> &middot; <a href="/#returns">Returns</a> &middot; <a href="/#privacy">Privacy</a></p>
+<p class="back"><a href="/">&larr; Back to The Open Grove</a></p>
+</div></main>
+<footer><div class="wrap">The Open Grove — a site for all pagans. Shop: <a href="https://www.etsy.com/shop/OpenGroveGoods" target="_blank" rel="noopener">OpenGroveGoods on Etsy</a> &middot; <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAkGmgrnLDdnW2NTMyFmON5D89OcG5p64wi_QUcRXA9pnpcg/viewform" target="_blank" rel="noopener">Give feedback</a> &middot; <a href="../feedback-form.pdf">Prefer paper? Get the PDF</a></div></footer>
+<script>
+/* Page transitions — a soft veil with a moon mark as one page leaves and the next arrives.
+   Created by JS so a page with JS off still shows normally. Respects prefers-reduced-motion. */
+(function(){
+  var reduced = false;
+  try{ reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches; }catch(e){}
+  var veil = document.createElement('div');
+  veil.className = 'grove-veil';
+  veil.setAttribute('aria-hidden','true');
+  veil.innerHTML = '<span class="grove-veil-mark">\u263e</span><span class="grove-veil-word">The Open Grove</span>';
+  document.body.appendChild(veil);
+  veil.classList.add('on');
+  function reveal(){ veil.classList.remove('on'); }
+  if (reduced) { reveal(); }
+  else { requestAnimationFrame(function(){ requestAnimationFrame(reveal); }); }
+  document.addEventListener('click', function(ev){
+    if (reduced) return;
+    var a = ev.target.closest ? ev.target.closest('a') : null;
+    if (!a) return;
+    var href = a.getAttribute('href');
+    if (!href || href.charAt(0) === '#' || a.target === '_blank') return;
+    if (a.hasAttribute('download')) return;
+    var url;
+    try{ url = new URL(href, window.location.href); }catch(e){ return; }
+    if (url.origin !== window.location.origin) return;
+    if (url.pathname === window.location.pathname && url.search === window.location.search) return;
+    ev.preventDefault();
+    veil.classList.add('on');
+    window.setTimeout(function(){ window.location.href = url.href; }, 380);
+  });
+})();
+</script>
+<script src="../guide-bot.js"></script>
+</body>
+</html>
