@@ -112,6 +112,8 @@ nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb, var(--bg) 94%
 .nav-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .nav-toggle{display:none}
 .nav-menu{display:flex;align-items:center;gap:14px;margin-left:auto}
+@media (min-width:1120px){.nav-in{max-width:1280px}.nav-menu{display:contents}.nav-links{order:4;width:100%;flex-wrap:nowrap;font-size:.86rem}.nav-links a{padding:10px 6px}.nav-actions{order:3;margin-left:auto}}
+@media (max-width:840px){body section{padding:36px 0}body section.tight{padding:28px 0}}
 @media (max-width:840px){
   :root{--nav-h:73px}
   .nav-in{gap:8px;padding:6px 14px}
@@ -330,6 +332,9 @@ figcaption{font-size:.9rem;color:var(--ink-soft);margin-top:8px;font-style:itali
 .shop-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:36px;align-items:center;margin-top:6px}
 @media (max-width:840px){ .shop-grid{grid-template-columns:1fr} }
 .shop-grid figure{margin:0}
+.welcome-grid figure img,.shop-grid figure img{background-color:var(--bg2)}
+.daily-band{max-width:1120px;margin:0 auto;padding:2px 20px 18px;display:flex;gap:4px 20px;flex-wrap:wrap;align-items:baseline;font-size:.95rem;color:#efe9d2}
+.daily-band a{color:#eec27a}
 .shop-grid figure img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%;aspect-ratio:1/1;object-fit:cover}
 .raven-banner{width:100%;height:280px;object-fit:cover;object-position:center 30%;border-radius:var(--radius);box-shadow:var(--shadow);margin:26px 0 8px}
 .raven-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}
@@ -346,7 +351,8 @@ figcaption{font-size:.9rem;color:var(--ink-soft);margin-top:8px;font-style:itali
 .read-list li strong{color:var(--ink)}
 @media (max-width:840px){ .raven-grid{grid-template-columns:1fr} .raven-banner{height:200px} }
 .shop-designs{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px}
-.design-chip{font-family:"Alegreya Sans",sans-serif;font-size:.92rem;font-weight:500;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:10px 14px;min-height:44px;display:inline-flex;align-items:center}
+.design-chip{font-family:"Alegreya Sans",sans-serif;font-size:.92rem;font-weight:500;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:10px 14px;min-height:44px;display:inline-flex;align-items:center;text-decoration:none}
+a.design-chip:hover{border-color:var(--clay);color:var(--clay)}
 .shop-note{font-size:.95rem;color:var(--ink-soft);margin-top:14px}
 footer{padding:38px 0 90px;border-top:1px solid var(--line);color:var(--ink-soft);font-size:.95rem}
 footer .wrap{display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between}
@@ -433,7 +439,7 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
 </nav>
 
 <header class="hero" id="top">
-  <img src="images/hero-stone-circle.webp" srcset="images/hero-stone-circle-480w.webp 480w, images/hero-stone-circle-768w.webp 768w, images/hero-stone-circle-900w.webp 900w, images/hero-stone-circle-1200w.webp 1200w, images/hero-stone-circle.webp 1600w" sizes="100vw" fetchpriority="high" alt="Painted illustration of a moss-covered stone circle in a forest clearing at golden dusk, with small candles glowing at the base of the stones" />
+  <img src="images/hero-stone-circle.webp" width="1600" height="533" srcset="images/hero-stone-circle-480w.webp 480w, images/hero-stone-circle-768w.webp 768w, images/hero-stone-circle-900w.webp 900w, images/hero-stone-circle-1200w.webp 1200w, images/hero-stone-circle.webp 1600w" sizes="100vw" fetchpriority="high" alt="Painted illustration of a moss-covered stone circle in a forest clearing at golden dusk, with small candles glowing at the base of the stones" />
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="hero-shade" aria-hidden="true"></div>
   <div class="hero-embers" aria-hidden="true">
@@ -480,6 +486,7 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
       <button type="button" id="hemi-s" aria-pressed="false">Southern Hemisphere</button>
     </div>
   </div>
+  <div class="daily-band"><strong>Today in the grove:</strong> <a href="wisdom.html#rune-card">Draw today's rune</a> <a href="wisdom.html#daily-message">Raven's Daily Message</a> <a href="this-week.html">This Week</a> <a href="wheel.html">Living Wheel</a></div>
 </div>
 
 <!-- WELCOME -->
@@ -500,7 +507,7 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
       </div>
     </div>
     <figure>
-      <img src="images/forest-crossroads.webp" srcset="images/forest-crossroads-480w.webp 480w, images/forest-crossroads-768w.webp 768w, images/forest-crossroads.webp 1200w" sizes="(max-width: 840px) calc(100vw - 40px), 515px" loading="lazy" decoding="async" alt="Painted illustration of a forest crossroads where several earth paths diverge — toward a moonlit stone grove, a sunlit meadow, a river, and distant mountains" />
+      <img src="images/forest-crossroads.webp" width="1200" height="800" srcset="images/forest-crossroads-480w.webp 480w, images/forest-crossroads-768w.webp 768w, images/forest-crossroads.webp 1200w" sizes="(max-width: 840px) calc(100vw - 40px), 515px" loading="lazy" decoding="async" alt="Painted illustration of a forest crossroads where several earth paths diverge — toward a moonlit stone grove, a sunlit meadow, a river, and distant mountains" />
       <figcaption>Many paths, one forest. Where they cross, we can greet each other.</figcaption>
     </figure>
   </div>
@@ -561,7 +568,7 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
       <article class="raven-card">
         <div class="raven-body">
           <h3>Discord — The Open Grove</h3>
-          <p>Our fireside room: daily practice, rune study, altar photos and artwork, festival talk, and the grove-fire voice channel for sitting together in companionable quiet.</p>
+          <p>Our fireside room: eleven rooms to wander — daily practice, rune study, altar photos and artwork, festival talk — plus the grove-fire voice channel for sitting together in companionable quiet. New members start in the commons, and the Keeper team keeps it welcoming. Lurk as long as you like; no one has to introduce themselves to belong.</p>
           <p><a href="https://discord.gg/vcFPqbSbyd" target="_blank" rel="noopener">Join the Discord &rarr;</a></p>
         </div>
       </article>
@@ -595,21 +602,22 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
   <div class="wrap">
     <div class="shop-grid">
       <figure>
-        <img src="images/ravens-woodcut.webp" srcset="images/ravens-woodcut-480w.webp 480w, images/ravens-woodcut-768w.webp 768w, images/ravens-woodcut.webp 1000w" sizes="(max-width: 840px) calc(100vw - 40px), 515px" loading="lazy" decoding="async" alt="Woodcut-style print of two ravens — Huginn and Muninn — perched on an oak branch with acorns, framed by a knotwork border" />
+        <img src="images/ravens-woodcut.webp" width="1000" height="1000" srcset="images/ravens-woodcut-480w.webp 480w, images/ravens-woodcut-768w.webp 768w, images/ravens-woodcut.webp 1000w" sizes="(max-width: 840px) calc(100vw - 40px), 515px" loading="lazy" decoding="async" alt="Woodcut-style print of two ravens — Huginn and Muninn — perched on an oak branch with acorns, framed by a knotwork border" />
         <figcaption>Huginn and Muninn, Thought and Memory — the first of our woodcut designs.</figcaption>
       </figure>
       <div>
         <div class="rule"></div>
         <h2 style="font-size:clamp(1.9rem,4.4vw,2.7rem)">Take a piece of the grove home</h2>
         <p style="margin-top:12px">Our shop, <strong>OpenGroveGoods</strong> on Etsy, carries original woodcut-style Norse designs — carved-look prints made by the hands behind this grove. Each design comes on T-shirts, hoodies, mugs, and tote bags, printed to order when you ask for one. New: <a href="ravens.html">three Odin's Ravens designs</a>, drawn from the old poems.</p>
+        <p><a class="btn btn-moss" href="https://opengrovegoods.etsy.com?utm_source=the-open-grove.com&amp;utm_medium=website&amp;utm_campaign=index" target="_blank" rel="noopener">Visit OpenGroveGoods on Etsy</a></p>
         <div class="shop-designs" aria-label="Designs in the shop">
-          <span class="design-chip">Huginn &amp; Muninn — the two ravens</span>
-          <span class="design-chip">Yggdrasil, the World Tree</span>
-          <span class="design-chip">Mjölnir, Thor's hammer</span>
-          <span class="design-chip">Valknut</span>
-          <span class="design-chip">Vegvísir, the wayfinder stave</span>
+          <a class="design-chip" href="ravens.html">Huginn &amp; Muninn — the two ravens</a>
+          <a class="design-chip" href="library/heathenry.html">Yggdrasil, the World Tree</a>
+          <a class="design-chip" href="library/heathenry.html">Mjölnir, Thor's hammer</a>
+          <a class="design-chip" href="ravens.html">Valknut</a>
+          <a class="design-chip" href="https://opengrovegoods.etsy.com/listing/4625014896/vegvisir-ravens-t-shirt-icelandic?utm_source=the-open-grove.com&amp;utm_medium=website&amp;utm_campaign=index" target="_blank" rel="noopener">Vegvísir, the wayfinder stave</a>
         </div>
-        <a class="btn btn-moss" href="https://opengrovegoods.etsy.com?utm_source=the-open-grove.com&amp;utm_medium=website&amp;utm_campaign=index" target="_blank" rel="noopener">Visit OpenGroveGoods on Etsy</a> <a class="btn btn-line" href="shop.html">Browse the full shop</a>
+        <p><a href="shop.html">Browse the full shop &rarr;</a></p>
         <p class="shop-note">Tees start at $24.99, hoodies at $42.99, mugs at $14.99, and totes at $19.99. Every order is handled through Etsy — browsing costs nothing, and the ravens would love the company.</p>
       </div>
     </div>
