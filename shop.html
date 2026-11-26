@@ -145,10 +145,6 @@ nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb, var(--bg) 94%
 .mic-status{margin:14px 0 0;color:var(--ink-soft)}
 .mic-text{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0;white-space:pre-wrap}
 .mic-note{margin:10px 0 0;font-size:.92rem;color:var(--ink-soft)}
-.quick-exit-btn{background:transparent;border:1px solid var(--line);color:var(--ink-soft);font-family:"Alegreya Sans",sans-serif;font-size:.88rem;font-weight:600;border-radius:999px;padding:10px 14px;min-height:48px;cursor:pointer}
-.quick-exit-btn:hover{border-color:var(--clay);color:var(--clay)}
-#quick-exit-float{position:fixed;right:14px;bottom:14px;z-index:90;background:color-mix(in srgb, var(--card) 92%, transparent);backdrop-filter:blur(8px);border:1px solid var(--line);color:var(--ink-soft);font-family:"Alegreya Sans",sans-serif;font-size:.88rem;font-weight:600;border-radius:999px;padding:12px 16px;min-height:52px;cursor:pointer;box-shadow:var(--shadow)}
-#quick-exit-float:hover{border-color:var(--clay);color:var(--clay)}
 
 /* Hero */
 .hero{position:relative;color:#f5efdb;background:#14231a;overflow:hidden}
@@ -365,7 +361,7 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
 #print-area{display:none}
 @media print{
   body{background:#fff!important;color:#111!important}
-  nav, .hero-cta, .today-actions, #quick-exit-float, #focus-overlay, .tool-actions, .filter-bar, .nav-actions{display:none!important}
+  nav, .hero-cta, .today-actions, #focus-overlay, .tool-actions, .filter-bar, .nav-actions{display:none!important}
   section{padding:24px 0}
   /* Journal-page printing: when a Print button is used, print only the journal page */
   body.printing-journal > *:not(#print-area){display:none!important}
