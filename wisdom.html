@@ -6,6 +6,16 @@
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:," />
 <title>Old Wisdom & Runes — The Open Grove</title>
+<meta name="description" content="Old wisdom and runes: two small daily practices, free to anyone. Sit with a verse from the Hávamál. Draw a rune — a question to carry." />
+<meta property="og:title" content="Old Wisdom &amp; Runes — The Open Grove" />
+<meta property="og:description" content="Old wisdom and runes: two small daily practices, free to anyone. Sit with a verse from the Hávamál. Draw a rune — a question to carry." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://the-open-grove.com/wisdom.html" />
+<meta property="og:image" content="https://the-open-grove.com/images/hero-stone-circle.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Old Wisdom &amp; Runes — The Open Grove" />
+<meta name="twitter:description" content="Old wisdom and runes: two small daily practices, free to anyone. Sit with a verse from the Hávamál. Draw a rune — a question to carry." />
+<link rel="canonical" href="https://the-open-grove.com/wisdom.html" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J2MFKQN4EV"></script>
 <script>
@@ -33,14 +43,16 @@ src="https://www.facebook.com/tr?id=29081718441491025&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{
   --bg:#f3ecda; --bg2:#eadfc2; --card:#fdf8ea; --ink:#1d2b1f; --ink-soft:#3f4f3d;
   --moss:#2e4a33; --moss-deep:#1c3121; --fern:#5a7d5e; --sage:#e2dcc0;
   --amber:#8a5a0e; --amber-bright:#b97a14; --clay:#8a4526; --line:#c9b98d;
   --gold-line:#a8853f; --shadow:0 10px 30px rgba(30,53,36,.16);
-  --radius:14px; --focus:#0b5fff;
+  --radius:14px; --focus:#0b5fff; --nav-h:195px;
   --parchment-noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
 }
 @media (prefers-color-scheme: dark){
@@ -66,7 +78,7 @@ html.hc .fchip[aria-pressed="true"]{background:#000;border-color:#000;color:#fff
 html.hc .seg button[aria-pressed="true"]{background:#000;color:#fff}
 html.hc .btn-moss{background:#003300;color:#fff}
 *{box-sizing:border-box}
-html{font-size:100%;scroll-behavior:smooth}
+html{font-size:100%;scroll-behavior:smooth;scroll-padding-top:var(--nav-h)}
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{animation:none!important; transition:none!important} }
 body{margin:0;color:var(--ink);font-family:"Alegreya", Georgia, serif;font-size:1.125rem;line-height:1.65;
   background-color:var(--bg);
@@ -97,6 +109,7 @@ nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb, var(--bg) 94%
 .nav-toggle{display:none}
 .nav-menu{display:flex;align-items:center;gap:14px;margin-left:auto}
 @media (max-width:840px){
+  :root{--nav-h:73px}
   .nav-in{gap:8px;padding:6px 14px}
   .nav-brand{font-size:1.15rem}
   .nav-toggle{display:inline-flex;align-items:center;gap:6px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:10px 14px;min-height:48px;font-family:"Alegreya Sans",sans-serif;font-size:.94rem;font-weight:700;cursor:pointer}
@@ -260,7 +273,7 @@ figcaption{font-size:.9rem;color:var(--ink-soft);margin-top:8px;font-style:itali
 /* Practice recipes */
 .practice-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:36px;align-items:start;margin-top:8px}
 @media (max-width:840px){ .practice-grid{grid-template-columns:1fr} }
-.practice-grid figure{margin:0;position:sticky;top:84px}
+.practice-grid figure{margin:0;position:sticky;top:var(--nav-h)}
 @media (max-width:840px){ .practice-grid figure{position:static} }
 .practice-grid figure img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%;aspect-ratio:4/3.4;object-fit:cover}
 .recipe{background-color:var(--card);background-image:var(--parchment-noise);background-blend-mode:multiply;border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin-bottom:18px;box-shadow:0 4px 16px rgba(30,53,36,.08)}
@@ -392,14 +405,18 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
     <div class="nav-menu" id="nav-menu">
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="library/index.html">Library</a>
-        <a href="about.html">About</a>
         <a href="wheel.html">Wheel of the Year</a>
         <a href="wisdom.html">Wisdom &amp; Runes</a>
+        <a href="library/index.html">Library</a>
+        <a href="community.html">Community</a>
+        <a href="this-week.html">This Week</a>
+        <a href="ravens.html">Ravens</a>
         <a href="keepsakes.html">Keepsakes</a>
         <a href="share.html">Share a Recipe</a>
-        <a href="ravens.html#designs">Suggest a Design</a>
+        <a href="about.html">About</a>
+        <a href="policies.html">Policies</a>
+        <a href="shop.html">Shop</a>
+        <a href="#join">Join</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAkGmgrnLDdnW2NTMyFmON5D89OcG5p64wi_QUcRXA9pnpcg/viewform" target="_blank" rel="noopener">Give feedback</a>
       </div>
       <div class="nav-actions">
@@ -418,10 +435,22 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
       <h2>Old wisdom, and a rune for the road</h2>
       <p>Two small daily practices, free to anyone. Sit with a verse. Draw a rune — not as a fortune told, but as a question to carry. <a href="keepsakes.html">Save the ones that land</a>, or print them as a journal page — they stay in this browser, on this device, with no account.</p>
     </div>
+    <div class="tool-card" id="daily-message" style="margin-bottom:26px">
+      <h3>Raven's Daily Message</h3>
+      <p class="sub">One rune and one verse for today — the same pair all day, drawn from the tools below.</p>
+      <div class="rune-stage" style="min-height:0">
+        <div class="rune-tile"><div class="glyph" id="dm-rune-glyph">—</div><div class="rname" id="dm-rune-name">—</div><div class="rpos">Today's rune</div></div>
+      </div>
+      <div class="verse-box" style="margin-top:16px">
+        <blockquote id="dm-verse-text">—</blockquote>
+        <div class="verse-src" id="dm-verse-src">—</div>
+      </div>
+      <p id="dm-reflection" style="margin:16px 0 0">—</p>
+    </div>
     <div class="duo">
       <div class="tool-card" id="verse-card">
         <h3>Words of the High One</h3>
-        <p class="sub">From the Hávamál — the wisdom poem of Odin, carried in the Poetic Edda. Heathens open it daily; its counsel on guests, friendship, and reputation belongs to everyone. Three new verses joined the rotation this week — on wisdom, friendship, and the road. New to the poem? The <a href="library/reading.html">reading list</a> names the translations our Norse groups trust most.</p>
+        <p class="sub">From the Hávamál — the wisdom poem of Odin, carried in the Poetic Edda. Heathens open it daily; its counsel on guests, friendship, and reputation belongs to everyone. Three new verses joined the rotation in November 2026 — on wisdom, friendship, and the road. New to the poem? The <a href="library/reading.html">reading list</a> names the translations our Norse groups trust most.</p>
         <div class="verse-box">
           <blockquote id="verse-text"></blockquote>
           <div class="verse-src" id="verse-src"></div>
@@ -440,6 +469,7 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
           <div class="rune-empty">Your runes are still in the bag.<br>Draw when you're ready.</div>
         </div>
         <div class="rune-reading" id="rune-reading" aria-live="polite"></div>
+        <p class="sub">The keywords are the modern readers' meanings; the old rune poems say less, and plainer.</p>
         <div class="tool-actions">
           <div class="seg" role="group" aria-label="How many runes">
             <button type="button" id="seg-1" aria-pressed="true">One rune</button>
@@ -461,7 +491,7 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
     <span><strong style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink)">The Open Grove</strong> — a site for all pagans.</span>
     <span>Shop: <a href="https://opengrovegoods.etsy.com?utm_source=the-open-grove.com&amp;utm_medium=website&amp;utm_campaign=wisdom" target="_blank" rel="noopener">OpenGroveGoods on Etsy</a></span>
     <span>Contact: <a href="mailto:hello@the-open-grove.com">hello@the-open-grove.com</a></span>
-    <span>Follow the grove: <a href="https://www.tiktok.com/@occulus72" target="_blank" rel="noopener">TikTok — the shop</a> · <a href="https://www.tiktok.com/@lauraofthegrove" target="_blank" rel="noopener">TikTok — Laura</a> · <a href="https://www.instagram.com/lauraofthegrove/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@OpenGroveGoods" target="_blank" rel="noopener">YouTube</a> · <a href="https://x.com/LauraOfTheGrove" target="_blank" rel="noopener">X</a> · <a href="https://www.threads.net/@lauraofthegrove" target="_blank" rel="noopener">Threads</a></span>
+    <span>Follow the grove: <a href="https://www.tiktok.com/@occulus72" target="_blank" rel="noopener">TikTok — the shop</a> · <a href="https://www.tiktok.com/@lauraofthegrove" target="_blank" rel="noopener">TikTok — Laura</a> · <a href="https://www.instagram.com/lauraofthegrove/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@OpenGroveGoods" target="_blank" rel="noopener">YouTube</a> · <a href="https://x.com/LauraOfTheGrove" target="_blank" rel="noopener">X</a> · <a href="https://www.threads.net/@lauraofthegrove" target="_blank" rel="noopener">Threads</a> · <a href="https://discord.gg/vcFPqbSbyd" target="_blank" rel="noopener">Discord — The Open Grove</a> · <a href="https://www.facebook.com/groups/2456535288212955" target="_blank" rel="noopener">Facebook group</a> · <a href="https://www.pinterest.com/gkeefers/" target="_blank" rel="noopener">Pinterest</a> · <a href="https://www.facebook.com/61596416278828/" target="_blank" rel="noopener">Facebook Page</a></span>
     <span><a href="policies.html#shipping">Shipping</a> · <a href="policies.html#returns">Returns</a> · <a href="policies.html#privacy">Privacy</a> · <a href="policies.html#accessibility">Accessibility</a> &middot; <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAkGmgrnLDdnW2NTMyFmON5D89OcG5p64wi_QUcRXA9pnpcg/viewform" target="_blank" rel="noopener">Give feedback</a> &middot; <a href="feedback-form.pdf">Prefer paper? Get the PDF</a></span>
     <span><a href="wheel.html">Festival dates</a> follow the hemisphere switch on the <a href="wheel.html">Wheel of the Year</a> page — Northern by default; south of the equator, choose Southern and the wheel turns by six months. <a href="index.html">Moon and season shown for today</a>, wherever you are reading. <a href="keepsakes.html">Keepsakes</a> are stored only in this browser.</span>
   </div>
@@ -528,7 +558,12 @@ function nextFullMoon(from){
   var date = new Date(from.getFullYear(), from.getMonth(), from.getDate());
   var daysAway = isFullToday ? 0 : Math.max(1, Math.round(delta));
   if (!isFullToday) date.setDate(date.getDate() + daysAway);
-  return { date: date, daysAway: daysAway, name: FULL_NAMES[date.getMonth()], isToday: isFullToday };
+  /* A second full moon in one calendar month is a Blue Moon (e.g. May 2026: full moons May 1 and May 31) — check whether an earlier day this month was already full, using the same phase maths. Days within 3 days of this one are the same full moon (one full phase spans ~2 days), so only count a full day at least 4 days earlier. */
+  var isBlue = false;
+  for (var dd = 1; dd <= date.getDate() - 4; dd++){
+    if (moonPhase(new Date(date.getFullYear(), date.getMonth(), dd)).name === 'Full Moon'){ isBlue = true; break; }
+  }
+  return { date: date, daysAway: daysAway, name: isBlue ? "Blue Moon" : FULL_NAMES[date.getMonth()], isToday: isFullToday };
 }
 var MOON_NOW = moonPhase(new Date());
 var NEXT_FULL = nextFullMoon(new Date());
@@ -553,11 +588,11 @@ function applyContrast(on){
 
 /* ---------- Hávamál verses ---------- */
 var VERSES = [
- { t:"All doorways, before going forward,\nshould be looked to;\nfor difficult it is to know where foes may sit within a dwelling.", n:"Hávamál 1", note:"Look before you step — in houses, in arguments, in life." },
- { t:"Cattle die, kinsmen die,\nthe self must also die;\nbut glory never dies,\nfor the man who is able to achieve it.", n:"Hávamál 76", note:"What outlives us is the name we earn by how we lived." },
- { t:"Cattle die, kinsmen die,\nthe self must also die;\nI know one thing which never dies:\nthe reputation of each dead man.", n:"Hávamál 77", note:"The most quoted verse in the poem — reputation is the only immortality on offer." },
+ { t:"Within the gates ere a man shall go,\n(Full warily let him watch,)\nFull long let him look about him;\nFor little he knows where a foe may lurk,\nAnd sit in the seats within.", n:"Hávamál 1", note:"Look before you step — in houses, in arguments, in life." },
+ { t:"Cattle die, and kinsmen die,\nAnd so one dies one's self;\nBut a noble name will never die,\nIf good renown one gets.", n:"Hávamál 76", note:"What outlives us is the name we earn by how we lived." },
+ { t:"Cattle die, and kinsmen die,\nAnd so one dies one's self;\nOne thing I know that never dies,\nThe fame of a dead man's deeds.", n:"Hávamál 77", note:"reputation is the only immortality on offer." },
  { t:"The foolish man lies awake all night and worries about things;\nhe is tired when morning comes, and everything is just as bad as it was.", n:"Hávamál 23 (paraphrased)", note:"Anxiety at 3 a.m. fixes nothing. Rest is also a strategy." },
- { t:"A friend should be a friend to his friend, and repay gift for gift;\nlaughter for laughter let him give back, but falsehood for falsehood.", n:"Hávamál 42", note:"Reciprocity in one breath: match generosity with generosity, and don't be a fool for liars." },
+ { t:"To his friend a man a friend shall prove,\nAnd gifts with gifts requite;\nBut men shall mocking with mockery answer,\nAnd fraud with falsehood meet.", n:"Hávamál 42", note:"Reciprocity in one breath: match generosity with generosity, and don't be a fool for liars." },
  { t:"Even the road to a bad friend is long, though he live close by;\nbut the road to a good friend is short, though he live far away.", n:"Hávamál 34 (adapted)", note:"Distance is measured in welcome, not miles." },
  { t:"Better no prayer than too big an offering —\na gift always looks for a return.\nBetter no offering than too much sacrifice.", n:"Hávamál 145 (adapted)", note:"Give freely, but give in measure — obligation is not devotion." },
  { t:"Fire is best among the sons of men,\nand the sight of the sun;\nhealth, if a man can keep it,\nand a life without shame.", n:"Hávamál 68 (adapted)", note:"The poem's short list of life's best things. Notice how plain they are." },
@@ -574,7 +609,7 @@ function showVerse(){
   currentVerse = VERSES[vi];
   document.getElementById('verse-text').innerHTML = verseHTML(currentVerse);
   document.getElementById('verse-src').textContent = currentVerse.n + ' — ' + currentVerse.note;
-  syncFocusVerse();
+  if (typeof syncFocusVerse === 'function') syncFocusVerse();
 }
 document.getElementById('verse-btn').addEventListener('click', function(){
   var next; do { next = Math.floor(Math.random()*VERSES.length); } while (next === vi);
@@ -586,25 +621,26 @@ document.getElementById('verse-btn').addEventListener('click', function(){
 var RUNES = [
  ['ᚠ','Fehu','wealth · cattle · earned prosperity','What you have earned and how it moves. Wealth kept still rots; wealth passed hand to hand blesses.','Where does my prosperity need to flow?'],
  ['ᚢ','Uruz','strength · wild vitality · the aurochs','Raw, untamed strength — health, will, and the life-force that won’t be domesticated.','What in me is still wild and strong?'],
- ['ᚦ','Thurisaz','thorn · defense · the reactive force','A thorn on the branch: protection that pricks. Pause before you act; a hasty strike draws your own blood.','Where do I need a boundary, not a battle?'],
+ ['ᚦ','Thurisaz','giant · thorn · defense','A thorn on the branch: protection that pricks. Pause before you act; a hasty strike draws your own blood.','Where do I need a boundary, not a battle?'],
  ['ᚨ','Ansuz','signal · breath · Odin\'s wisdom','The rune of the word — messages, counsel, inspiration on the breath. Listen twice as much as you speak today.','What is trying to be said — and heard?'],
  ['ᚱ','Raidho','riding · the journey · right order','The wheel turning on a true axle. Movement, travel, and a life kept rolling in rhythm.','What is my next right step, not my final one?'],
- ['ᚲ','Kenaz','torch · knowledge · the hearth-fire','A torch in a dark hall: knowledge that lights a room for everyone, not just the holder.','What have I learned that I should share?'],
+ ['ᚲ','Kenaz','torch (the Norse poems say \'sore\') · knowledge · the hearth-fire','A torch in a dark hall: knowledge that lights a room for everyone, not just the holder.','What have I learned that I should share?'],
  ['ᚷ','Gebo','gift · exchange · the crossed hands','Gift for gift, the oldest law of the grove. Generosity without ledger, obligation without resentment.','What gift is mine to give — or to finally receive?'],
+ ['ᚹ','Wunjo','joy · harmony · belonging','The joy of the hall after the work is done — belonging, harmony, and a wish fulfilled without striving.','Where do I already belong, and have I let myself feel it?'],
  ['ᚺ','Hagalaz','hail · disruption · weather you don\'t choose','Hail flattens the field it feeds. Disruption is not punishment; it is the year making room.','What is the storm actually clearing for me?'],
  ['ᚾ','Nauthiz','need · friction · the fire struck from need','Need-fire: warmth born of rubbing two sticks together. Constraint is a teacher with rough hands.','What is my need trying to teach me?'],
  ['ᛁ','Isa','ice · stillness · the frozen lake','Ice is beautiful and stops the boats. This is a season for waiting, not forcing. Stillness is not failure.','What would improve if I simply waited?'],
  ['ᛃ','Jera','harvest · the year · what ripens in time','You reap in season, not on demand. Effort put in honestly comes back around the wheel.','What did I plant that is quietly ripening?'],
  ['ᛇ','Eihwaz','yew · endurance · the tree of life and death','The yew bends, endures winter, and outlives kingdoms. Flexibility in service of staying rooted.','Where do I bend so I do not break?'],
- ['ᛈ','Perthro','the dice cup · mystery · chance','Some of the game is skill and some is the throw. Perthro is the part you cannot control — play it with a light grip.','What outcome must I release to the dice?'],
+ ['ᛈ','Perthro','the dice cup? · mystery · chance. The old meaning is lost; \'dice cup\' is the leading guess','Some of the game is skill and some is the throw. Perthro is the part you cannot control — play it with a light grip.','What outcome must I release to the dice?'],
  ['ᛉ','Algiz','protection · the elk-sedge · reaching up','Arms raised to the gods and roots in the earth: the posture of guarded openness.','How do I stay open and protected at once?'],
- ['ᛊ','Sowilo','sun · wholeness · clear victory','The sun-wheel: energy, clarity, and success that comes from alignment rather than force.','Where is the light already pointing?'],
+ ['ᛊ','Sowilo','sun · wholeness · clear victory','The sun: energy, clarity, and success that comes from alignment rather than force.','Where is the light already pointing?'],
  ['ᛏ','Tiwaz','honor · justice · Tyr\'s hand','Tyr put his hand in the wolf\'s mouth and paid the price of the pledge. Integrity costs. Pay it anyway.','What does honor require of me here — exactly?'],
  ['ᛒ','Berkana','birch · renewal · new growth','The first tree back after the ice. Gentle beginnings, recovery, and growth that starts small and pale-green.','What tender thing is starting, if I protect it?'],
  ['ᛖ','Ehwaz','horse · partnership · trust in motion','Two horses, one harness. Progress through trust — with a partner, a team, or your own divided self.','Who moves well beside me, and have I said so?'],
  ['ᛗ','Mannaz','mankind · community · the self among others','No one is self-made. Mannaz is the rune of the web of people that holds — and sometimes tests — us.','Which relationship needs my attention this week?'],
  ['ᛚ','Laguz','water · flow · intuition','The lake and the river: what flows finds its way around stone. Feelings are data; dreams are weather reports.','What am I feeling that I keep arguing with?'],
- ['ᛜ','Ingwaz','seed · potential · Ing\'s hearth','A seed in the dark earth, complete and waiting. Gestation is not delay — it is where the power gathers.','What should I keep private until it\'s grown?'],
+ ['ᛜ','Ingwaz','the god Ing · seed · stored potential','A seed in the dark earth, complete and waiting. Gestation is not delay — it is where the power gathers.','What should I keep private until it\'s grown?'],
  ['ᛞ','Dagaz','dawn · breakthrough · the new day','Dawn after a real night: clarity, awakening, and the turn from darkness you can trust because you waited for it.','What does this new light let me finally see?'],
  ['ᛟ','Othala','heritage · home · what is inherited','The homestead and the inheritance — land, values, and the best of what the dead handed down. Keep what serves; release the rest.','What did I inherit that is truly worth keeping?']
 ];
@@ -628,6 +664,23 @@ document.getElementById('rune-btn').addEventListener('click', function(){
   }).join('');
   document.getElementById('rune-note').textContent = '';
 });
+
+/* ---------- Raven's Daily Message: today's rune + today's verse, together ---------- */
+function showDailyMessage(){
+  var v = VERSES[dayIndex() % VERSES.length];
+  var r = RUNES[dayIndex() % RUNES.length];
+  var g = document.getElementById('dm-rune-glyph');
+  if (g) g.textContent = r[0];
+  var n = document.getElementById('dm-rune-name');
+  if (n) n.textContent = r[1] + ' — ' + r[2];
+  var vt = document.getElementById('dm-verse-text');
+  if (vt) vt.innerHTML = verseHTML(v);
+  var vs = document.getElementById('dm-verse-src');
+  if (vs) vs.textContent = v.n + ' — ' + v.note;
+  var rf = document.getElementById('dm-reflection');
+  if (rf) rf.textContent = 'Today ' + r[1] + ' (' + r[2] + ') meets ' + v.n + ': ' + v.note + ' Carry the rune\u2019s question with you — ' + r[4];
+}
+showDailyMessage();
 
 /* ---------- Keepsakes: save in this browser (local storage) ---------- */
 var KEEP_KEY = 'opengrove-keepsakes-v1';
@@ -753,6 +806,19 @@ showVerse();
       btn.setAttribute('aria-expanded', 'false');
     });
   }
+})();
+</script>
+<script>
+/* Header offset: anchor jumps and the sticky figure land below the header.
+   The header wraps to three rows on wide screens, so its height is measured live, not guessed. */
+(function(){
+  var nav = document.querySelector('nav');
+  if(!nav) return;
+  function setH(){ document.documentElement.style.setProperty('--nav-h', (nav.offsetHeight + 12) + 'px'); }
+  window.addEventListener('resize', setH);
+  nav.addEventListener('click', function(){ setH(); setTimeout(setH, 300); });
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(setH); }
+  setH();
 })();
 </script>
 <script>

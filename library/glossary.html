@@ -6,6 +6,16 @@
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:," />
 <title>Words You'll Hear in the Grove — The Open Grove</title>
+<meta name="description" content="Words you’ll hear in the grove, with how to say them and where they come from. Filter by tradition to learn one path’s vocabulary at a time." />
+<meta property="og:title" content="Words You&#x27;ll Hear in the Grove — The Open Grove" />
+<meta property="og:description" content="Words you’ll hear in the grove, with how to say them and where they come from. Filter by tradition to learn one path’s vocabulary at a time." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://the-open-grove.com/library/glossary.html" />
+<meta property="og:image" content="https://the-open-grove.com/images/hero-stone-circle.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Words You&#x27;ll Hear in the Grove — The Open Grove" />
+<meta name="twitter:description" content="Words you’ll hear in the grove, with how to say them and where they come from. Filter by tradition to learn one path’s vocabulary at a time." />
+<link rel="canonical" href="https://the-open-grove.com/library/glossary.html" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J2MFKQN4EV"></script>
 <script>
@@ -33,14 +43,16 @@ src="https://www.facebook.com/tr?id=29081718441491025&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{
   --bg:#f3ecda; --bg2:#eadfc2; --card:#fdf8ea; --ink:#1d2b1f; --ink-soft:#3f4f3d;
   --moss:#2e4a33; --moss-deep:#1c3121; --fern:#5a7d5e; --sage:#e2dcc0;
   --amber:#8a5a0e; --amber-bright:#b97a14; --clay:#8a4526; --line:#c9b98d;
   --gold-line:#a8853f; --shadow:0 10px 30px rgba(30,53,36,.16);
-  --radius:14px; --focus:#0b5fff;
+  --radius:14px; --focus:#0b5fff; --nav-h:195px;
   --parchment-noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
 }
 @media (prefers-color-scheme: dark){
@@ -66,7 +78,7 @@ html.hc .fchip[aria-pressed="true"]{background:#000;border-color:#000;color:#fff
 html.hc .seg button[aria-pressed="true"]{background:#000;color:#fff}
 html.hc .btn-moss{background:#003300;color:#fff}
 *{box-sizing:border-box}
-html{font-size:100%;scroll-behavior:smooth}
+html{font-size:100%;scroll-behavior:smooth;scroll-padding-top:var(--nav-h)}
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{animation:none!important; transition:none!important} }
 body{margin:0;color:var(--ink);font-family:"Alegreya", Georgia, serif;font-size:1.125rem;line-height:1.65;
   background-color:var(--bg);
@@ -97,6 +109,7 @@ nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb, var(--bg) 94%
 .nav-toggle{display:none}
 .nav-menu{display:flex;align-items:center;gap:14px;margin-left:auto}
 @media (max-width:840px){
+  :root{--nav-h:73px}
   .nav-in{gap:8px;padding:6px 14px}
   .nav-brand{font-size:1.15rem}
   .nav-toggle{display:inline-flex;align-items:center;gap:6px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:10px 14px;min-height:48px;font-family:"Alegreya Sans",sans-serif;font-size:.94rem;font-weight:700;cursor:pointer}
@@ -260,7 +273,7 @@ figcaption{font-size:.9rem;color:var(--ink-soft);margin-top:8px;font-style:itali
 /* Practice recipes */
 .practice-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:36px;align-items:start;margin-top:8px}
 @media (max-width:840px){ .practice-grid{grid-template-columns:1fr} }
-.practice-grid figure{margin:0;position:sticky;top:84px}
+.practice-grid figure{margin:0;position:sticky;top:var(--nav-h)}
 @media (max-width:840px){ .practice-grid figure{position:static} }
 .practice-grid figure img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%;aspect-ratio:4/3.4;object-fit:cover}
 .recipe{background-color:var(--card);background-image:var(--parchment-noise);background-blend-mode:multiply;border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin-bottom:18px;box-shadow:0 4px 16px rgba(30,53,36,.08)}
@@ -383,14 +396,18 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
     <div class="nav-menu" id="nav-menu">
       <div class="nav-links">
         <a href="../index.html">Home</a>
-        <a href="../shop.html">Shop</a>
-        <a href="index.html">Library</a>
-        <a href="../about.html">About</a>
         <a href="../wheel.html">Wheel of the Year</a>
         <a href="../wisdom.html">Wisdom &amp; Runes</a>
+        <a href="index.html">Library</a>
+        <a href="../community.html">Community</a>
+        <a href="../this-week.html">This Week</a>
+        <a href="../ravens.html">Ravens</a>
         <a href="../keepsakes.html">Keepsakes</a>
         <a href="../share.html">Share a Recipe</a>
-        <a href="../ravens.html#designs">Suggest a Design</a>
+        <a href="../about.html">About</a>
+        <a href="../policies.html">Policies</a>
+        <a href="../shop.html">Shop</a>
+        <a href="../index.html#join">Join</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAkGmgrnLDdnW2NTMyFmON5D89OcG5p64wi_QUcRXA9pnpcg/viewform" target="_blank" rel="noopener">Give feedback</a>
       </div>
       <div class="nav-actions">
@@ -414,23 +431,38 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
       <button class="fchip" type="button" data-filter="norse" aria-pressed="false">Norse</button>
       <button class="fchip" type="button" data-filter="wiccan" aria-pressed="false">Wiccan</button>
       <button class="fchip" type="button" data-filter="celtic" aria-pressed="false">Celtic</button>
+      <button class="fchip" type="button" data-filter="hellenic" aria-pressed="false">Hellenic</button>
+      <button class="fchip" type="button" data-filter="kemetic" aria-pressed="false">Kemetic</button>
       <button class="fchip" type="button" data-filter="general" aria-pressed="false">General</button>
       <span class="filter-count" id="gloss-count" aria-live="polite"></span>
     </div>
     <dl class="gloss" id="gloss-list">
+      <div data-traditions="kemetic"><dt>Akhu<span class="pron">AH-khoo</span></dt><dd>The blessed dead — ancestors who have gone on and are still part of the family, whose names are spoken and who are asked for guidance and blessing.</dd><span class="trad">Kemetic</span></div>
       <div data-traditions="general"><dt>Altar</dt><dd>A dedicated surface for devotion and work — a shrine, a table, a flat stone. Size doesn't matter; intention does.</dd><span class="trad">General · all paths</span></div>
       <div data-traditions="celtic general"><dt>Awen<span class="pron">AH-wen</span></dt><dd>In Welsh tradition, the flowing inspiration that moves through poetry, song, and craft — sought by Druids as a sign the work is alive.</dd><span class="trad">Celtic · Druidry</span></div>
       <div data-traditions="norse"><dt>Blót<span class="pron">BLOHT</span></dt><dd>A Heathen offering rite: food, drink, or other gifts given to gods, ancestors, or land spirits, often shared by the gathered kindred.</dd><span class="trad">Norse · Heathen</span></div>
-      <div data-traditions="celtic"><dt>Brigid<span class="pron">BREE-yid</span></dt><dd>Celtic goddess — and later saint — of the hearth fire, poetry, smithcraft, and healing wells. Imbolc is her festival.</dd><span class="trad">Celtic</span></div>
-      <div data-traditions="wiccan"><dt>Esbat<span class="pron">ESS-bat</span></dt><dd>A Wiccan observance of the moon, usually at the full moon — the monthly counterpart to the eight solar sabbats. See <a href="../index.html#t-esbat">the tracker at the top of this page</a>.</dd><span class="trad">Wiccan</span></div>
+      <div data-traditions="celtic"><dt>Brigid<span class="pron">BREE-id</span></dt><dd>Celtic goddess — and later saint — of the hearth fire, poetry, smithcraft, and healing wells. Imbolc is her festival.</dd><span class="trad">Celtic</span></div>
+      <div data-traditions="hellenic"><dt>Deipnon<span class="pron">DAYP-non</span></dt><dd>The dark-moon night that closes the Hellenic month, when a supper is left for Hecate and the restless dead and the house is swept clean before the new month.</dd><span class="trad">Hellenic</span></div>
+      <div data-traditions="kemetic"><dt>Dua<span class="pron">DOO-ah</span></dt><dd>Praise or adoration offered to the gods — spoken prayer, in Kemetic practice.</dd><span class="trad">Kemetic</span></div>
+      <div data-traditions="wiccan"><dt>Esbat<span class="pron">ESS-bat</span></dt><dd>A Wiccan observance of the moon, usually at the full moon — the monthly counterpart to the eight solar sabbats. See <a href="../index.html#t-esbat">the moon tracker on the home page</a>.</dd><span class="trad">Wiccan</span></div>
+      <div data-traditions="hellenic"><dt>Eusebeia</dt><dd>Reverence shown in right action, not only in right feeling — doing the honours rightly and regularly.</dd><span class="trad">Hellenic</span></div>
       <div data-traditions="norse"><dt>Frith<span class="pron">FREETH</span></dt><dd>Old Norse for the peace and trust maintained within a family or community — and the work of maintaining it.</dd><span class="trad">Norse · Heathen</span></div>
       <div data-traditions="norse"><dt>Hávamál<span class="pron">HAH-vah-mahl</span></dt><dd>“Sayings of the High One” — Odin's wisdom poem in the Poetic Edda: counsel on guests, gifts, friendship, and reputation. The <a href="../wisdom.html">verses on the Wisdom &amp; Runes page</a> come from it.</dd><span class="trad">Norse · Heathen</span></div>
+      <div data-traditions="kemetic"><dt>Heka<span class="pron">HEH-kah</span></dt><dd>The power the Egyptians called magic, understood as a force woven into creation itself, used by gods, priests, healers, and ordinary families alike.</dd><span class="trad">Kemetic</span></div>
+      <div data-traditions="kemetic"><dt>Isfet<span class="pron">ISS-fet</span></dt><dd>Chaos and wrongdoing — the opposite of ma'at.</dd><span class="trad">Kemetic</span></div>
+      <div data-traditions="hellenic"><dt>Kharis<span class="pron">KHAH-ris</span></dt><dd>Grace given and returned — the friendship between gods and mortals, built by showing up with offerings again and again.</dd><span class="trad">Hellenic</span></div>
+      <div data-traditions="hellenic"><dt>Khernips<span class="pron">KAIR-nips</span></dt><dd>Lustral water, for washing the hands before approaching the gods.</dd><span class="trad">Hellenic</span></div>
       <div data-traditions="norse"><dt>Kindred</dt><dd>A Heathen community — the people you practice, feast, and keep frith with. Sometimes family, often chosen.</dd><span class="trad">Norse · Heathen</span></div>
+      <div data-traditions="kemetic"><dt>Ma'at<span class="pron">mah-AHT</span></dt><dd>Truth, balance, justice, and right order — both a goddess, shown with a feather in her hair, and a way of living.</dd><span class="trad">Kemetic</span></div>
+      <div data-traditions="kemetic"><dt>Netjer<span class="pron">NET-jer</span></dt><dd>A god; the Netjeru are the gods of ancient Egypt. In Kemetic Orthodoxy the word can also name the divine as a whole, of which each god is a part.</dd><span class="trad">Kemetic</span></div>
+      <div data-traditions="hellenic"><dt>Noumenia<span class="pron">noo-MEN-ee-ah</span></dt><dd>The first day of the Hellenic lunar month, marked at the first sighting of the new crescent — a household day, when the shrine is cleaned and small offerings are made.</dd><span class="trad">Hellenic</span></div>
       <div data-traditions="wiccan general"><dt>Sabbat<span class="pron">SAB-bat</span></dt><dd>One of the eight seasonal festivals of the Wheel of the Year: four solar turning points and four cross-quarter days.</dd><span class="trad">Wiccan · General</span></div>
       <div data-traditions="celtic general"><dt>Samhain<span class="pron">SOW-in</span></dt><dd>The last harvest and the turning of the Celtic year, Oct 31 – Nov 1 — the feast of the dead, when the veil is said to thin. Not “sam-hayn”: the <em>mh</em> sounds like a <em>w</em>.</dd><span class="trad">Celtic · General</span></div>
+      <div data-traditions="kemetic"><dt>Senut<span class="pron">SEN-oot</span></dt><dd>The daily shrine rite of Kemetic Orthodoxy — the word means “shrine.”</dd><span class="trad">Kemetic</span></div>
       <div data-traditions="norse"><dt>Sumbel<span class="pron">SOOM-bel</span></dt><dd>A Heathen ritual of toasts in rounds — to the gods, to the ancestors, and to worthy deeds and oaths. Words spoken in sumbel carry weight.</dd><span class="trad">Norse · Heathen</span></div>
       <div data-traditions="norse general"><dt>Wight<span class="pron">WYTE</span></dt><dd>An old word for a being or spirit — land-wights are the spirits of a place, honored across Norse and Germanic practice.</dd><span class="trad">Norse · General</span></div>
-      <div data-traditions="norse"><dt>Wyrd<span class="pron">WEERD</span></dt><dd>Fate as a woven web rather than a fixed script — what has been laid down by past actions, still being woven by present ones.</dd><span class="trad">Norse · Heathen</span></div>
+      <div data-traditions="norse"><dt>Wyrd<span class="pron">WEERD</span></dt><dd>Fate as the old stories picture it — a web woven from past actions, still being woven by present ones.</dd><span class="trad">Norse · Heathen</span></div>
+      <div data-traditions="hellenic"><dt>Xenia</dt><dd>Sacred hospitality — the duty to receive the guest and the stranger well, because a stranger at the door might be a god in disguise.</dd><span class="trad">Hellenic</span></div>
     </dl>
   </div>
 </section>
@@ -442,7 +474,7 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
     <span><strong style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink)">The Open Grove</strong> — a site for all pagans.</span>
     <span>Shop: <a href="https://opengrovegoods.etsy.com?utm_source=the-open-grove.com&amp;utm_medium=website&amp;utm_campaign=library-glossary" target="_blank" rel="noopener">OpenGroveGoods on Etsy</a></span>
     <span>Contact: <a href="mailto:hello@the-open-grove.com">hello@the-open-grove.com</a></span>
-    <span>Follow the grove: <a href="https://www.tiktok.com/@occulus72" target="_blank" rel="noopener">TikTok — the shop</a> · <a href="https://www.tiktok.com/@lauraofthegrove" target="_blank" rel="noopener">TikTok — Laura</a> · <a href="https://www.instagram.com/lauraofthegrove/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@OpenGroveGoods" target="_blank" rel="noopener">YouTube</a> · <a href="https://x.com/LauraOfTheGrove" target="_blank" rel="noopener">X</a> · <a href="https://www.threads.net/@lauraofthegrove" target="_blank" rel="noopener">Threads</a></span>
+    <span>Follow the grove: <a href="https://www.tiktok.com/@occulus72" target="_blank" rel="noopener">TikTok — the shop</a> · <a href="https://www.tiktok.com/@lauraofthegrove" target="_blank" rel="noopener">TikTok — Laura</a> · <a href="https://www.instagram.com/lauraofthegrove/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@OpenGroveGoods" target="_blank" rel="noopener">YouTube</a> · <a href="https://x.com/LauraOfTheGrove" target="_blank" rel="noopener">X</a> · <a href="https://www.threads.net/@lauraofthegrove" target="_blank" rel="noopener">Threads</a> · <a href="https://discord.gg/vcFPqbSbyd" target="_blank" rel="noopener">Discord — The Open Grove</a> · <a href="https://www.facebook.com/groups/2456535288212955" target="_blank" rel="noopener">Facebook group</a> · <a href="https://www.pinterest.com/gkeefers/" target="_blank" rel="noopener">Pinterest</a> · <a href="https://www.facebook.com/61596416278828/" target="_blank" rel="noopener">Facebook Page</a></span>
     <span><a href="../policies.html#shipping">Shipping</a> · <a href="../policies.html#returns">Returns</a> · <a href="../policies.html#privacy">Privacy</a> · <a href="../policies.html#accessibility">Accessibility</a> &middot; <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAkGmgrnLDdnW2NTMyFmON5D89OcG5p64wi_QUcRXA9pnpcg/viewform" target="_blank" rel="noopener">Give feedback</a> &middot; <a href="../feedback-form.pdf">Prefer paper? Get the PDF</a></span>
     <span><a href="../wheel.html">Festival dates</a> follow the hemisphere switch on the <a href="../wheel.html">Wheel of the Year</a> page — Northern by default; south of the equator, choose Southern and the wheel turns by six months. <a href="../index.html#top">Moon and season shown for today</a>, wherever you are reading. <a href="../keepsakes.html">Keepsakes</a> are stored only in this browser.</span>
   </div>
@@ -482,6 +514,19 @@ function applyContrast(on){
       btn.setAttribute('aria-expanded', 'false');
     });
   }
+})();
+</script>
+<script>
+/* Header offset: anchor jumps and the sticky figure land below the header.
+   The header wraps to three rows on wide screens, so its height is measured live, not guessed. */
+(function(){
+  var nav = document.querySelector('nav');
+  if(!nav) return;
+  function setH(){ document.documentElement.style.setProperty('--nav-h', (nav.offsetHeight + 12) + 'px'); }
+  window.addEventListener('resize', setH);
+  nav.addEventListener('click', function(){ setH(); setTimeout(setH, 300); });
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(setH); }
+  setH();
 })();
 </script>
 <script>

@@ -6,6 +6,16 @@
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:," />
 <title>Celtic Polytheism — The Open Grove</title>
+<meta name="description" content="Celtic polytheism: devotion to the gods of the Celtic peoples — the Dagda, Brigid, Lugh, the Morrígan — grounded in the surviving myths and texts." />
+<meta property="og:title" content="Celtic Polytheism — The Open Grove" />
+<meta property="og:description" content="Celtic polytheism: devotion to the gods of the Celtic peoples — the Dagda, Brigid, Lugh, the Morrígan — grounded in the surviving myths and texts." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://the-open-grove.com/library/celtic.html" />
+<meta property="og:image" content="https://the-open-grove.com/images/hero-stone-circle.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Celtic Polytheism — The Open Grove" />
+<meta name="twitter:description" content="Celtic polytheism: devotion to the gods of the Celtic peoples — the Dagda, Brigid, Lugh, the Morrígan — grounded in the surviving myths and texts." />
+<link rel="canonical" href="https://the-open-grove.com/library/celtic.html" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J2MFKQN4EV"></script>
 <script>
@@ -33,14 +43,16 @@ src="https://www.facebook.com/tr?id=29081718441491025&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{
   --bg:#f3ecda; --bg2:#eadfc2; --card:#fdf8ea; --ink:#1d2b1f; --ink-soft:#3f4f3d;
   --moss:#2e4a33; --moss-deep:#1c3121; --fern:#5a7d5e; --sage:#e2dcc0;
   --amber:#8a5a0e; --amber-bright:#b97a14; --clay:#8a4526; --line:#c9b98d;
   --gold-line:#a8853f; --shadow:0 10px 30px rgba(30,53,36,.16);
-  --radius:14px; --focus:#0b5fff;
+  --radius:14px; --focus:#0b5fff; --nav-h:195px;
   --parchment-noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
 }
 @media (prefers-color-scheme: dark){
@@ -66,7 +78,7 @@ html.hc .fchip[aria-pressed="true"]{background:#000;border-color:#000;color:#fff
 html.hc .seg button[aria-pressed="true"]{background:#000;color:#fff}
 html.hc .btn-moss{background:#003300;color:#fff}
 *{box-sizing:border-box}
-html{font-size:100%;scroll-behavior:smooth}
+html{font-size:100%;scroll-behavior:smooth;scroll-padding-top:var(--nav-h)}
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{animation:none!important; transition:none!important} }
 body{margin:0;color:var(--ink);font-family:"Alegreya", Georgia, serif;font-size:1.125rem;line-height:1.65;
   background-color:var(--bg);
@@ -97,6 +109,7 @@ nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb, var(--bg) 94%
 .nav-toggle{display:none}
 .nav-menu{display:flex;align-items:center;gap:14px;margin-left:auto}
 @media (max-width:840px){
+  :root{--nav-h:73px}
   .nav-in{gap:8px;padding:6px 14px}
   .nav-brand{font-size:1.15rem}
   .nav-toggle{display:inline-flex;align-items:center;gap:6px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:10px 14px;min-height:48px;font-family:"Alegreya Sans",sans-serif;font-size:.94rem;font-weight:700;cursor:pointer}
@@ -260,7 +273,7 @@ figcaption{font-size:.9rem;color:var(--ink-soft);margin-top:8px;font-style:itali
 /* Practice recipes */
 .practice-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:36px;align-items:start;margin-top:8px}
 @media (max-width:840px){ .practice-grid{grid-template-columns:1fr} }
-.practice-grid figure{margin:0;position:sticky;top:84px}
+.practice-grid figure{margin:0;position:sticky;top:var(--nav-h)}
 @media (max-width:840px){ .practice-grid figure{position:static} }
 .practice-grid figure img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%;aspect-ratio:4/3.4;object-fit:cover}
 .recipe{background-color:var(--card);background-image:var(--parchment-noise);background-blend-mode:multiply;border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin-bottom:18px;box-shadow:0 4px 16px rgba(30,53,36,.08)}
@@ -383,14 +396,18 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
     <div class="nav-menu" id="nav-menu">
       <div class="nav-links">
         <a href="../index.html">Home</a>
-        <a href="../shop.html">Shop</a>
-        <a href="index.html">Library</a>
-        <a href="../about.html">About</a>
         <a href="../wheel.html">Wheel of the Year</a>
         <a href="../wisdom.html">Wisdom &amp; Runes</a>
+        <a href="index.html">Library</a>
+        <a href="../community.html">Community</a>
+        <a href="../this-week.html">This Week</a>
+        <a href="../ravens.html">Ravens</a>
         <a href="../keepsakes.html">Keepsakes</a>
         <a href="../share.html">Share a Recipe</a>
-        <a href="../ravens.html#designs">Suggest a Design</a>
+        <a href="../about.html">About</a>
+        <a href="../policies.html">Policies</a>
+        <a href="../shop.html">Shop</a>
+        <a href="../index.html#join">Join</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAkGmgrnLDdnW2NTMyFmON5D89OcG5p64wi_QUcRXA9pnpcg/viewform" target="_blank" rel="noopener">Give feedback</a>
       </div>
       <div class="nav-actions">
@@ -417,12 +434,12 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
     <p>Honor works the same way: in the old stories, a person&apos;s word and their name are the same thing. The land matters too. Wells, hills, rivers, and old trees are not scenery on this path; they are places where the spirits of the land live, and they are treated with the respect you would give a neighbor&apos;s house &mdash; approached politely, thanked, and left clean.</p>
     <h3>How worship actually looks</h3>
     <p>Most Celtic polytheist worship is small, household, and regular. Offerings are made at the hearth and at the well: a little milk, bread, or ale poured out, a prayer spoken aloud, a candle lit for a god or an ancestor. The hearth is the heart of the house, and Brigid belongs to it in particular. Wells are visited too, with offerings left and prayers said.</p>
-    <p>The year turns on four festivals. Imbolc, on the first of February, is Brigid&apos;s festival, the first stirring of spring; a cross woven from rushes is hung in the house on her day, a folk custom first recorded in the seventeenth century and still kept today. Beltane opens the summer, Lughnasadh, named for Lugh, brings the first harvest, and Samhain opens the winter, when the dead are closest and are honored by name. Learning the languages belongs here too: even a little Irish or Welsh meets the tradition on its own ground.</p>
+    <p>The year turns on four festivals. Imbolc, on the first of February, falls on St Brigid&apos;s Day, and modern pagans honour Brigid — goddess of poetry, smithcraft and healing — at it, the first stirring of spring; a cross woven from rushes is hung in the house on her day, a folk custom first recorded in the seventeenth century and still kept today. Beltane opens the summer, Lughnasadh, named for Lugh, brings the first harvest, and Samhain opens the winter, when the old stories say the boundary between this world and the Otherworld loosened that night, the mounds stood open, and the dead could come home — and they are honored by name. Learning the languages belongs here too: even a little Irish or Welsh meets the tradition on its own ground.</p>
     <h3>The old stories and sources</h3>
     <p>The Irish sources are grouped by scholars into cycles, and the one that matters most here is the Mythological Cycle: tales and poems about the Tuatha Dé Danann and the peoples who came before them. Its framework is the <em>Lebor Gabála Érenn</em>, the Book of Invasions &mdash; or, in a fuller translation, the Book of the Taking of Ireland &mdash; compiled in its earliest version late in the eleventh century from older poems and prose. It tells of six successive peoples coming to Ireland, the fifth of them the Tuatha Dé Danann, who were driven underground by the Gaels and became the people of the hills. Alongside it stands the <em>Cath Maige Tuired</em>, the Battle of Mag Tuired. These are not scripture: they were written down by Christian scribes who did not worship these gods. But they are the best record we have of what the old Irish believed, and they are where the gods still live.</p>
     <p>The Welsh sources matter too. The <em>Mabinogion</em> is a collection of eleven medieval Welsh tales, gathered in two great fourteenth-century manuscripts, the White Book of Rhydderch and the Red Book of Hergest. Its heart is the Four Branches of the <em>Mabinogi</em> &mdash; <em>Pwyll</em>, <em>Branwen</em>, <em>Manawydan</em>, and <em>Math</em> &mdash; stories rooted in older Welsh myth. Lady Charlotte Guest&apos;s English translation of the 1840s is still a good place to start. The Gaulish gods, by contrast, survive mostly in inscriptions and place-names, and their stories are largely lost to us.</p>
     <h3>What it is not</h3>
-    <p>It is not a continuous priesthood, and it is not a single religion. The old faith was not passed down in secret from druid to druid to the present day; it was reconstructed from literature and archaeology. And &ldquo;Celtic&rdquo; does not mean one thing: it covers the Irish, the Welsh, the Gaulish, and the Brythonic peoples, whose gods overlap but are not identical. An Irish polytheist and a Welsh polytheist are cousins on this road, not twins.</p>
+    <p>It is not a continuous priesthood, and it is not a single religion. The old faith was not passed down in secret from druid to druid to the present day; it was reconstructed from literature and archaeology. And &ldquo;Celtic&rdquo; does not mean one thing: it covers the Irish, the Welsh, the Cornish and Bretons, and the Gaulish peoples, whose gods overlap but are not identical. An Irish polytheist and a Welsh polytheist are cousins on this road, not twins.</p>
     <p>Irish polytheism is also distinct from the paths it is often confused with. It is not Celtic-flavored Wicca: Wicca is a modern religion with its own gods, its own circle, and its own Wheel of the Year, and borrowing a Celtic name or two does not make it Celtic polytheism. And it is not Druidry, which is its own modern path, shaped by its own orders, groves, and search for <em>awen</em>, inspiration. Druids and Celtic polytheists are neighbors, but they are different roads. Nor is this path a matter of blood or a surname. What it asks: learn the stories, keep your word, feed your guests, and honor the gods, the ancestors, and the land as you find them.</p>
     <h3>Learn more</h3>
     <p>Start with the stories themselves: the <em>Lebor Gabála Érenn</em> and the <em>Cath Maige Tuired</em> for Ireland, and the Four Branches of the <em>Mabinogi</em> for Wales, in a good modern translation with notes. Our <a href="reading.html">reading list</a> points to translations and introductions worth your time, and the <a href="glossary.html">glossary</a> explains the words you will keep meeting, from <em>Tuatha Dé Danann</em> to <em>sídhe</em>. The tradition&apos;s own voices &mdash; Irish polytheist writers and teachers &mdash; are the ones to listen to first.</p>
@@ -438,7 +455,7 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
     <span><strong style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink)">The Open Grove</strong> — a site for all pagans.</span>
     <span>Shop: <a href="https://opengrovegoods.etsy.com?utm_source=the-open-grove.com&amp;utm_medium=website&amp;utm_campaign=library-celtic" target="_blank" rel="noopener">OpenGroveGoods on Etsy</a></span>
     <span>Contact: <a href="mailto:hello@the-open-grove.com">hello@the-open-grove.com</a></span>
-    <span>Follow the grove: <a href="https://www.tiktok.com/@occulus72" target="_blank" rel="noopener">TikTok — the shop</a> · <a href="https://www.tiktok.com/@lauraofthegrove" target="_blank" rel="noopener">TikTok — Laura</a> · <a href="https://www.instagram.com/lauraofthegrove/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@OpenGroveGoods" target="_blank" rel="noopener">YouTube</a> · <a href="https://x.com/LauraOfTheGrove" target="_blank" rel="noopener">X</a> · <a href="https://www.threads.net/@lauraofthegrove" target="_blank" rel="noopener">Threads</a></span>
+    <span>Follow the grove: <a href="https://www.tiktok.com/@occulus72" target="_blank" rel="noopener">TikTok — the shop</a> · <a href="https://www.tiktok.com/@lauraofthegrove" target="_blank" rel="noopener">TikTok — Laura</a> · <a href="https://www.instagram.com/lauraofthegrove/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@OpenGroveGoods" target="_blank" rel="noopener">YouTube</a> · <a href="https://x.com/LauraOfTheGrove" target="_blank" rel="noopener">X</a> · <a href="https://www.threads.net/@lauraofthegrove" target="_blank" rel="noopener">Threads</a> · <a href="https://discord.gg/vcFPqbSbyd" target="_blank" rel="noopener">Discord — The Open Grove</a> · <a href="https://www.facebook.com/groups/2456535288212955" target="_blank" rel="noopener">Facebook group</a> · <a href="https://www.pinterest.com/gkeefers/" target="_blank" rel="noopener">Pinterest</a> · <a href="https://www.facebook.com/61596416278828/" target="_blank" rel="noopener">Facebook Page</a></span>
     <span><a href="../policies.html#shipping">Shipping</a> · <a href="../policies.html#returns">Returns</a> · <a href="../policies.html#privacy">Privacy</a> · <a href="../policies.html#accessibility">Accessibility</a> &middot; <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAkGmgrnLDdnW2NTMyFmON5D89OcG5p64wi_QUcRXA9pnpcg/viewform" target="_blank" rel="noopener">Give feedback</a> &middot; <a href="../feedback-form.pdf">Prefer paper? Get the PDF</a></span>
     <span><a href="../wheel.html">Festival dates</a> follow the hemisphere switch on the <a href="../wheel.html">Wheel of the Year</a> page — Northern by default; south of the equator, choose Southern and the wheel turns by six months. <a href="../index.html#top">Moon and season shown for today</a>, wherever you are reading. <a href="../keepsakes.html">Keepsakes</a> are stored only in this browser.</span>
   </div>
@@ -478,6 +495,19 @@ function applyContrast(on){
       btn.setAttribute('aria-expanded', 'false');
     });
   }
+})();
+</script>
+<script>
+/* Header offset: anchor jumps and the sticky figure land below the header.
+   The header wraps to three rows on wide screens, so its height is measured live, not guessed. */
+(function(){
+  var nav = document.querySelector('nav');
+  if(!nav) return;
+  function setH(){ document.documentElement.style.setProperty('--nav-h', (nav.offsetHeight + 12) + 'px'); }
+  window.addEventListener('resize', setH);
+  nav.addEventListener('click', function(){ setH(); setTimeout(setH, 300); });
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(setH); }
+  setH();
 })();
 </script>
 <script>

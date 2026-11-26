@@ -12,7 +12,7 @@
    "lon": -80.44583,
    "start": "10:00",
    "title": "Yule Celebration",
-   "url": null,
+   "url": "https://www.facebook.com/thewitchscupboardva/posts/pfbid0mk3KvP3FMVmgm6ia9nJVCJCqZ8uDv4y2nwntiguiMHBPJpvyJwbEjtYM6Lvr7QAnl",
    "venue": "Unitarian Universalist Church"
   },
   {
@@ -46,9 +46,9 @@
    "venue": "Anahata Education Center"
   },
   {
-   "address": "2426 Brambleton Ave SW, Roanoke, VA 24015",
+   "address": "2304 Brambleton Ave SW, Roanoke, VA 24015",
    "date": "2026-12-20",
-   "details": "A nature gathering for the solstice \u2014 all faiths welcome.",
+   "details": "A nature gathering for the solstice — all faiths welcome. (Link is the organiser's November page, which announces the December gathering; the December listing has not been published yet.)",
    "end": null,
    "host": "Roanoke Church of the Wild",
    "id": "solstice-gathering-roanoke-2026-12-20",
@@ -63,9 +63,9 @@
   {
    "address": null,
    "date": "2026-12-12",
-   "details": "A free online Yuletide conference. Nine speakers across the day, talks and candlelight, in aid of Huggard, a Cardiff charity for people sleeping rough.",
+   "details": "A free online Yuletide conference. Talks and candlelight across the day, in aid of Huggard, a Cardiff charity for people sleeping rough.",
    "end": "19:30",
-   "host": "Pagan Festivals",
+   "host": "Dragonoak Coven (Sian Sibley)",
    "id": "returning-the-light-online-2026-12-12",
    "kind": "online",
    "lat": null,
@@ -95,7 +95,7 @@
    "date": "2026-12-20",
    "details": "A virtual winter solstice ritual.",
    "end": "21:00",
-   "host": null,
+   "host": "Annie / Wild Maven Wellness",
    "id": "embrace-the-darkness-online-2026-12-20",
    "kind": "online",
    "lat": null,
@@ -110,7 +110,7 @@
    "date": "2026-12-21",
    "details": "A virtual solstice retreat.",
    "end": "19:30",
-   "host": null,
+   "host": "Morningstars Ceremonies",
    "id": "winter-retreat-solstice-online-2026-12-21",
    "kind": "online",
    "lat": null,
@@ -123,16 +123,16 @@
   {
    "address": null,
    "date": "2026-12-21",
-   "details": "Free, one hour. Gathering, learning, reflection and relaxation.",
+   "details": "18+. One hour. Gathering, learning, reflection and relaxation. (8pm UK time.)",
    "end": null,
    "host": "Ostara Nature Connection",
    "id": "solstice-ostara-online-2026-12-21",
    "kind": "online",
    "lat": null,
    "lon": null,
-   "start": null,
+   "start": "15:00",
    "title": "Online Winter Solstice Gathering",
-   "url": "https://www.ticketsource.com/ostara-nature-connection",
+   "url": "https://www.ticketsource.com/ostara-nature-connection/online-gathering-yule-winter-solstice/e-zxyxaeb",
    "venue": "Online"
   }
  ],

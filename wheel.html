@@ -6,6 +6,16 @@
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:," />
 <title>Wheel of the Year — The Open Grove</title>
+<meta name="description" content="The Wheel of the Year: eight festivals marking the turning seasons — solstices, equinoxes, and the old festivals near the cross-quarter days." />
+<meta property="og:title" content="Wheel of the Year — The Open Grove" />
+<meta property="og:description" content="The Wheel of the Year: eight festivals marking the turning seasons — solstices, equinoxes, and the old festivals near the cross-quarter days." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://the-open-grove.com/wheel.html" />
+<meta property="og:image" content="https://the-open-grove.com/images/hero-stone-circle.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Wheel of the Year — The Open Grove" />
+<meta name="twitter:description" content="The Wheel of the Year: eight festivals marking the turning seasons — solstices, equinoxes, and the old festivals near the cross-quarter days." />
+<link rel="canonical" href="https://the-open-grove.com/wheel.html" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J2MFKQN4EV"></script>
 <script>
@@ -33,14 +43,16 @@ src="https://www.facebook.com/tr?id=29081718441491025&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{
   --bg:#f3ecda; --bg2:#eadfc2; --card:#fdf8ea; --ink:#1d2b1f; --ink-soft:#3f4f3d;
   --moss:#2e4a33; --moss-deep:#1c3121; --fern:#5a7d5e; --sage:#e2dcc0;
   --amber:#8a5a0e; --amber-bright:#b97a14; --clay:#8a4526; --line:#c9b98d;
   --gold-line:#a8853f; --shadow:0 10px 30px rgba(30,53,36,.16);
-  --radius:14px; --focus:#0b5fff;
+  --radius:14px; --focus:#0b5fff; --nav-h:195px;
   --parchment-noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
 }
 @media (prefers-color-scheme: dark){
@@ -66,7 +78,7 @@ html.hc .fchip[aria-pressed="true"]{background:#000;border-color:#000;color:#fff
 html.hc .seg button[aria-pressed="true"]{background:#000;color:#fff}
 html.hc .btn-moss{background:#003300;color:#fff}
 *{box-sizing:border-box}
-html{font-size:100%;scroll-behavior:smooth}
+html{font-size:100%;scroll-behavior:smooth;scroll-padding-top:var(--nav-h)}
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{animation:none!important; transition:none!important} }
 body{margin:0;color:var(--ink);font-family:"Alegreya", Georgia, serif;font-size:1.125rem;line-height:1.65;
   background-color:var(--bg);
@@ -97,6 +109,7 @@ nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb, var(--bg) 94%
 .nav-toggle{display:none}
 .nav-menu{display:flex;align-items:center;gap:14px;margin-left:auto}
 @media (max-width:840px){
+  :root{--nav-h:73px}
   .nav-in{gap:8px;padding:6px 14px}
   .nav-brand{font-size:1.15rem}
   .nav-toggle{display:inline-flex;align-items:center;gap:6px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:10px 14px;min-height:48px;font-family:"Alegreya Sans",sans-serif;font-size:.94rem;font-weight:700;cursor:pointer}
@@ -260,7 +273,7 @@ figcaption{font-size:.9rem;color:var(--ink-soft);margin-top:8px;font-style:itali
 /* Practice recipes */
 .practice-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:36px;align-items:start;margin-top:8px}
 @media (max-width:840px){ .practice-grid{grid-template-columns:1fr} }
-.practice-grid figure{margin:0;position:sticky;top:84px}
+.practice-grid figure{margin:0;position:sticky;top:var(--nav-h)}
 @media (max-width:840px){ .practice-grid figure{position:static} }
 .practice-grid figure img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%;aspect-ratio:4/3.4;object-fit:cover}
 .recipe{background-color:var(--card);background-image:var(--parchment-noise);background-blend-mode:multiply;border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin-bottom:18px;box-shadow:0 4px 16px rgba(30,53,36,.08)}
@@ -392,14 +405,18 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
     <div class="nav-menu" id="nav-menu">
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="library/index.html">Library</a>
-        <a href="about.html">About</a>
         <a href="wheel.html">Wheel of the Year</a>
         <a href="wisdom.html">Wisdom &amp; Runes</a>
+        <a href="library/index.html">Library</a>
+        <a href="community.html">Community</a>
+        <a href="this-week.html">This Week</a>
+        <a href="ravens.html">Ravens</a>
         <a href="keepsakes.html">Keepsakes</a>
         <a href="share.html">Share a Recipe</a>
-        <a href="ravens.html#designs">Suggest a Design</a>
+        <a href="about.html">About</a>
+        <a href="policies.html">Policies</a>
+        <a href="shop.html">Shop</a>
+        <a href="#join">Join</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAkGmgrnLDdnW2NTMyFmON5D89OcG5p64wi_QUcRXA9pnpcg/viewform" target="_blank" rel="noopener">Give feedback</a>
       </div>
       <div class="nav-actions">
@@ -415,7 +432,7 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
     <div class="sec-head">
       <div class="rule"></div>
       <h2>The Wheel of the Year</h2>
-      <p>Eight festivals mark the turning seasons — solstices, equinoxes, and the cross-quarter days between them. Not every pagan keeps all eight, and Heathens, Druids, and others keep their own calendars besides. But this wheel is the rhythm many of us share. Tap a festival to walk through its season. Dates below are for the Northern Hemisphere; south of the equator, the wheel turns six months opposite — use the hemisphere switch below to see your own dates.</p>
+      <p>Eight festivals mark the turning seasons — solstices, equinoxes, and the old festivals that fall *near* the cross-quarter days between them. Not every pagan keeps all eight, and Heathens, Druids, and others keep their own calendars besides. But this wheel is the rhythm many of us share. Tap a festival to walk through its season. Dates below are for the Northern Hemisphere; south of the equator, the wheel turns six months opposite — use the hemisphere switch below to see your own dates.</p>
     </div>
     <div class="seg" role="group" aria-label="Hemisphere for the Wheel of the Year" id="hemi-seg" style="margin-top:18px">
       <button type="button" id="hemi-n" aria-pressed="true">Northern Hemisphere</button>
@@ -447,6 +464,13 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
       </div>
       <article class="festival-panel" id="festival-panel" aria-live="polite"></article>
     </div>
+    <div class="festival-panel" id="moon-strip" style="margin-top:26px">
+      <h3>The moon this month</h3>
+      <p id="moon-now">—</p>
+      <ul id="moon-fulls"></ul>
+      <noscript><p>The moon dates are filled in by a small script on this page.</p></noscript>
+      <p>For today's rune, see <a href="wisdom.html">Wisdom &amp; Runes</a>.</p>
+    </div>
   </div>
 </section>
 </main>
@@ -455,7 +479,7 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
     <span><strong style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink)">The Open Grove</strong> — a site for all pagans.</span>
     <span>Shop: <a href="https://opengrovegoods.etsy.com?utm_source=the-open-grove.com&amp;utm_medium=website&amp;utm_campaign=wheel" target="_blank" rel="noopener">OpenGroveGoods on Etsy</a></span>
     <span>Contact: <a href="mailto:hello@the-open-grove.com">hello@the-open-grove.com</a></span>
-    <span>Follow the grove: <a href="https://www.tiktok.com/@occulus72" target="_blank" rel="noopener">TikTok — the shop</a> · <a href="https://www.tiktok.com/@lauraofthegrove" target="_blank" rel="noopener">TikTok — Laura</a> · <a href="https://www.instagram.com/lauraofthegrove/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@OpenGroveGoods" target="_blank" rel="noopener">YouTube</a> · <a href="https://x.com/LauraOfTheGrove" target="_blank" rel="noopener">X</a> · <a href="https://www.threads.net/@lauraofthegrove" target="_blank" rel="noopener">Threads</a></span>
+    <span>Follow the grove: <a href="https://www.tiktok.com/@occulus72" target="_blank" rel="noopener">TikTok — the shop</a> · <a href="https://www.tiktok.com/@lauraofthegrove" target="_blank" rel="noopener">TikTok — Laura</a> · <a href="https://www.instagram.com/lauraofthegrove/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@OpenGroveGoods" target="_blank" rel="noopener">YouTube</a> · <a href="https://x.com/LauraOfTheGrove" target="_blank" rel="noopener">X</a> · <a href="https://www.threads.net/@lauraofthegrove" target="_blank" rel="noopener">Threads</a> · <a href="https://discord.gg/vcFPqbSbyd" target="_blank" rel="noopener">Discord — The Open Grove</a> · <a href="https://www.facebook.com/groups/2456535288212955" target="_blank" rel="noopener">Facebook group</a> · <a href="https://www.pinterest.com/gkeefers/" target="_blank" rel="noopener">Pinterest</a> · <a href="https://www.facebook.com/61596416278828/" target="_blank" rel="noopener">Facebook Page</a></span>
     <span><a href="policies.html#shipping">Shipping</a> · <a href="policies.html#returns">Returns</a> · <a href="policies.html#privacy">Privacy</a> · <a href="policies.html#accessibility">Accessibility</a> &middot; <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAkGmgrnLDdnW2NTMyFmON5D89OcG5p64wi_QUcRXA9pnpcg/viewform" target="_blank" rel="noopener">Give feedback</a> &middot; <a href="feedback-form.pdf">Prefer paper? Get the PDF</a></span>
     <span><a href="wheel.html">Festival dates</a> follow the hemisphere switch on the <a href="wheel.html">Wheel of the Year</a> page — Northern by default; south of the equator, choose Southern and the wheel turns by six months. <a href="index.html">Moon and season shown for today</a>, wherever you are reading. <a href="keepsakes.html">Keepsakes</a> are stored only in this browser.</span>
   </div>
@@ -476,24 +500,24 @@ document.getElementById('quick-exit-float').addEventListener('click', quickExit)
 
 /* ---------- Festivals (with pronunciations) ---------- */
 var FESTIVALS = [
- { name:"Samhain", pron:"SOW-in", dates:"Oct 31 – Nov 1", m:10, d:31, season:"The last harvest & the thinning veil",
-   meaning:"The final harvest is in, the cattle come down from summer pasture, and the year turns toward darkness. Across many traditions this is the feast of the dead — the night the veil between worlds is said to thin, and the ancestors are closest and most welcome.",
+ { name:"Samhain", pron:"SOW-in", dates:"Oct 31 – Nov 1", m:10, d:31, season:"The last harvest & the open mounds",
+   meaning:"The final harvest is in, the cattle come down from summer pasture, and the year turns toward darkness. Across many modern traditions this is the feast of the dead — the old stories say the boundary between this world and the Otherworld loosened that night, the mounds stood open, and the dead could come home. The 'thin veil' is the modern way of saying it.",
    honor:"The beloved dead, by name. Ancestors of blood, of heart, and of the traditions we carry.",
-   ways:["Set an extra place at supper — the 'dumb supper' — and eat one meal in memory and gratitude.","Put photographs of your dead where you can greet them, and tell one true story about each.","Leave food and drink out overnight for wandering spirits, as households have done for centuries.","Take stock of the year: what is finished, what must be let go into the dark."] },
+   ways:["Set an extra place at supper — the 'dumb supper' of modern practice — and eat one meal in memory and gratitude.","Put photographs of your dead where you can greet them, and tell one true story about each.","Leave food and drink out overnight for wandering spirits, as households have done for centuries.","Take stock of the year: what is finished, what must be let go into the dark."] },
  { name:"Yule", pron:"YOOL", dates:"Around Dec 21 · Winter Solstice", m:12, d:21, season:"The longest night & the returning light",
    meaning:"The sun stands still at its lowest point, and the longest night of the year gives way — by a breath, then by minutes — to returning light. Heathens keep twelve nights of Yule for gods and ancestors; many others light the dark in their own way. Nothing in the year turns more hopefully than this.",
    honor:"The returning sun, the ancestors, and — in Heathen practice — Odin the Yule-Father and the gods of winter and plenty.",
    ways:["Keep one flame, candle, or fire burning through the longest night, and greet the dawn.","Make oaths and plans for the new year at the table, in good company.","Bring evergreen into the house — pine, holly, fir — as a promise that life persists.","In Heathen homes: a Yule log, toasts in sumbel, and a plate set out for the ancestors."] },
  { name:"Imbolc", pron:"IM-bolk", dates:"Feb 1 – 2", m:2, d:1, season:"First stirrings under the snow",
-   meaning:"The ewes come into milk, the first snowdrops push up, and the light is visibly longer though the cold still rules. Imbolc belongs to Brigid — Celtic goddess and saint alike — keeper of the hearth fire, poetry, smithcraft, and healing wells.",
+   meaning:"The ewes come into milk, the first snowdrops push up, and the light is visibly longer though the cold still rules. Imbolc falls on St Brigid's Day, and modern pagans honour Brigid — goddess of poetry, smithcraft and healing — at it.",
    honor:"Brigid in all her forms, the hearth, and every small beginning that starts in the dark.",
    ways:["Light candles in every room at dusk to welcome the returning light — and Brigid to the house.","Weave or hang a Brigid's cross, and put out a cloth or ribbon overnight for her blessing.","Plan the year's garden and the year's work; bless the seeds, literal and otherwise.","Clean and re-dedicate the hearth and the altar for the year ahead."] },
  { name:"Ostara", pron:"oh-STAR-ah", dates:"Around Mar 20 · Spring Equinox", m:3, d:20, season:"Day and night in balance, spring ascendant",
-   meaning:"Light and dark stand equal, and from here the light wins. Eggs, hares, seeds, and green shoots are the old symbols of this turning — life insisting on itself. Many traditions take the name from Ēostre, a dawn goddess of the Germanic spring.",
+   meaning:"Light and dark stand equal, and from here the light wins. Seeds and green shoots are the old signs of this turning — life insisting on itself. The egg and the hare are later folk customs, German mostly, from the 1600s onward. Many traditions take the name from Ēostre, the goddess Bede names for the Anglo-Saxon spring month — the 'dawn' in her name is a linguist's reconstruction, not something Bede says about her.",
    honor:"The waking earth, dawn and new growth, and the balance point before the climb toward summer.",
    ways:["Plant something — a seed in soil is the whole sermon of this festival in one act.","Take a dawn walk and be outside for the exact balance of the day.","Color or bless eggs as symbols of the life packed into a shell.","Open the windows, clear the winter out of the house, and let the new season in."] },
  { name:"Beltane", pron:"BEL-tayn", dates:"May 1", m:5, d:1, season:"The fires of early summer",
-   meaning:"Summer begins in earnest. In old Ireland the cattle were driven between two bonfires for blessing and protection, every hearth-fire was rekindled from the Beltane flame, and the world was green, flowering, and frankly in love. It is the year's most joyful fire festival.",
+   meaning:"Summer begins in earnest. In old Ireland the cattle were driven between two bonfires for blessing and protection — and in later folk custom, every hearth-fire was doused and re-lit from the Beltane flame, and the world was green, flowering, and frankly in love. It is one of the year's great fire festivals.",
    honor:"The fertile earth, the blossoming hawthorn, the fires of protection, and love in all its forms.",
    ways:["Light a fire — bonfire, hearth, or a single candle — and let something old burn away in it.","Weave ribbons on a maypole, a tree, or a simple branch with the people you love.","Gather (responsibly) or buy flowers for the house; wear green.","Leave an offering for the spirits of the wild places — the Good Neighbors are near at Beltane, so be courteous."] },
  { name:"Litha", pron:"LEE-thah", dates:"Around Jun 21 · Summer Solstice", m:6, d:21, season:"The longest day, the sun at its height",
@@ -511,12 +535,15 @@ var FESTIVALS = [
 ];
 /* Southern Hemisphere dates: the same eight festivals, six months on — solstice/equinox labels stay true (Yule is still the winter solstice, in June). */
 var SOUTHERN_DATES = { "Samhain":"Apr 30 – May 1", "Yule":"Around Jun 21 · Winter Solstice", "Imbolc":"Aug 1 – 2", "Ostara":"Around Sep 22 · Spring Equinox", "Beltane":"Nov 1", "Litha":"Around Dec 21 · Summer Solstice", "Lughnasadh":"Feb 1", "Mabon":"Around Mar 20 · Autumn Equinox" };
+/* Southern day-of-month where it differs from the northern one, so the countdown agrees with the displayed dates (Ostara Sep 22, Mabon Mar 20). */
+var SOUTHERN_DAY = { "Ostara":22, "Mabon":20 };
 
 /* ---------- Hemisphere (Northern / Southern) — choice saved in this browser ---------- */
 var HEMI_KEY = 'opengrove-hemisphere-v1';
 var HEMISPHERE = 'north';
 try{ var _hemiSaved = localStorage.getItem(HEMI_KEY); if (_hemiSaved === 'south' || _hemiSaved === 'north') HEMISPHERE = _hemiSaved; }catch(e){}
 function hemiMonth(m){ return HEMISPHERE === 'south' ? ((m + 5) % 12) + 1 : m; }
+function festDay(f){ return HEMISPHERE === 'south' ? (SOUTHERN_DAY[f.name] || f.d) : f.d; }
 function festMonth(f){ return hemiMonth(f.m); }
 function festDates(f){ return HEMISPHERE === 'south' ? (SOUTHERN_DATES[f.name] || f.dates) : f.dates; }
 var WHEEL_ORDER = [1,2,3,4,5,6,7,0];
@@ -552,9 +579,9 @@ FESTIVALS.forEach(function(f, i){
 });
 function daysUntil(f, from){
   var y = from.getFullYear();
-  var target = new Date(y, festMonth(f)-1, f.d);
+  var target = new Date(y, festMonth(f)-1, festDay(f));
   var start = new Date(y, from.getMonth(), from.getDate());
-  if (target < start) target = new Date(y+1, festMonth(f)-1, f.d);
+  if (target < start) target = new Date(y+1, festMonth(f)-1, festDay(f));
   return Math.round((target - start)/86400000);
 }
 function lastPassedIndex(from){
@@ -562,7 +589,7 @@ function lastPassedIndex(from){
   var best = 0, bestTime = -Infinity;
   FESTIVALS.forEach(function(f, i){
     [from.getFullYear()-1, from.getFullYear()].forEach(function(y){
-      var t = new Date(y, festMonth(f)-1, f.d).getTime();
+      var t = new Date(y, festMonth(f)-1, festDay(f)).getTime();
       if (t <= start && t > bestTime){ bestTime = t; best = i; }
     });
   });
@@ -611,6 +638,61 @@ function applyHemi(){
   applyHemi();
 })();
 
+/* ---------- Moon strip (same maths as index.html; Math.floor, not Math.round, for the full-moon count) ---------- */
+var SYNODIC = 29.530588853;
+var FULL_NAMES = ["Wolf Moon","Snow Moon","Worm Moon","Pink Moon","Flower Moon","Strawberry Moon","Buck Moon","Sturgeon Moon","Corn Moon","Hunter's Moon","Beaver Moon","Cold Moon"];
+function moonPhase(date){
+  var known = Date.UTC(2000, 0, 6, 18, 14) / 86400000;
+  var days = date.getTime()/86400000;
+  var age = ((days - known) % SYNODIC + SYNODIC) % SYNODIC;
+  var illum = Math.round((1 - Math.cos(2*Math.PI*age/SYNODIC))/2 * 100);
+  var name, emoji;
+  if (age < 1.85){ name='New Moon'; emoji='🌑'; }
+  else if (age < 7.38){ name='Waxing Crescent'; emoji='🌒'; }
+  else if (age < 9.23){ name='First Quarter'; emoji='🌓'; }
+  else if (age < 14.5){ name='Waxing Gibbous'; emoji='🌔'; }
+  else if (age < 16.61){ name='Full Moon'; emoji='🌕'; }
+  else if (age < 22.15){ name='Waning Gibbous'; emoji='🌖'; }
+  else if (age < 23.99){ name='Last Quarter'; emoji='🌗'; }
+  else { name='Waning Crescent'; emoji='🌘'; }
+  return { age: age, illum: illum, name: name, emoji: emoji };
+}
+function nextFullMoon(from){
+  var mp = moonPhase(from);
+  var targetAge = SYNODIC/2; /* ~14.765, center of full */
+  var delta = (targetAge - mp.age + SYNODIC) % SYNODIC;
+  /* If we are within the full-moon window and just past center, treat today as full */
+  var isFullToday = (mp.name === 'Full Moon');
+  var date = new Date(from.getFullYear(), from.getMonth(), from.getDate());
+  var daysAway = isFullToday ? 0 : Math.max(1, Math.floor(delta));
+  if (!isFullToday) date.setDate(date.getDate() + daysAway);
+  var name = FULL_NAMES[date.getMonth()];
+  /* Blue Moon: a second full moon in the same calendar month */
+  var prevFull = new Date(date.getTime() - SYNODIC*86400000);
+  if (prevFull.getMonth() === date.getMonth() && prevFull.getFullYear() === date.getFullYear()) name = 'Blue Moon';
+  /* Harvest Moon: the full moon nearest the autumn equinox (Sep 22) */
+  var equinox = new Date(date.getFullYear(), 8, 22);
+  if (Math.abs(date - equinox) < SYNODIC/2*86400000) name = 'Harvest Moon';
+  return { date: date, daysAway: daysAway, name: name, isToday: isFullToday };
+}
+(function(){
+  var now = new Date();
+  var mp = moonPhase(now);
+  var nowEl = document.getElementById('moon-now');
+  if (nowEl) nowEl.textContent = mp.emoji + ' ' + mp.name + ' — about ' + mp.illum + '% lit · ' + mp.age.toFixed(1) + ' days into the cycle';
+  var list = document.getElementById('moon-fulls');
+  if (list){
+    var first = nextFullMoon(now);
+    /* Count the second from three days after the first, to step past the
+       full-moon window (about two days either side of full) so the same
+       full moon is not counted twice. */
+    var second = nextFullMoon(new Date(first.date.getTime() + 3*86400000));
+    list.innerHTML = [first, second].map(function(f){
+      return '<li>' + esc(f.name) + ' — ' + f.date.toLocaleDateString(undefined, { weekday:'long', month:'long', day:'numeric', year:'numeric' }) + '</li>';
+    }).join('');
+  }
+})();
+
 var CONTRAST_KEY = 'opengrove-contrast-v1';
 function applyContrast(on){
   document.documentElement.classList.toggle('hc', !!on);
@@ -646,6 +728,19 @@ function applyContrast(on){
       btn.setAttribute('aria-expanded', 'false');
     });
   }
+})();
+</script>
+<script>
+/* Header offset: anchor jumps and the sticky figure land below the header.
+   The header wraps to three rows on wide screens, so its height is measured live, not guessed. */
+(function(){
+  var nav = document.querySelector('nav');
+  if(!nav) return;
+  function setH(){ document.documentElement.style.setProperty('--nav-h', (nav.offsetHeight + 12) + 'px'); }
+  window.addEventListener('resize', setH);
+  nav.addEventListener('click', function(){ setH(); setTimeout(setH, 300); });
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(setH); }
+  setH();
 })();
 </script>
 <script>

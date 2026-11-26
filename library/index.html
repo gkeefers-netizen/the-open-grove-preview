@@ -6,6 +6,16 @@
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:," />
 <title>Library — The Open Grove</title>
+<meta name="description" content="The Library: the grove’s reading room. Look something up, find a book worth your time, or try a short practice and see how it sits." />
+<meta property="og:title" content="Library — The Open Grove" />
+<meta property="og:description" content="The Library: the grove’s reading room. Look something up, find a book worth your time, or try a short practice and see how it sits." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://the-open-grove.com/library/index.html" />
+<meta property="og:image" content="https://the-open-grove.com/images/hero-stone-circle.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Library — The Open Grove" />
+<meta name="twitter:description" content="The Library: the grove’s reading room. Look something up, find a book worth your time, or try a short practice and see how it sits." />
+<link rel="canonical" href="https://the-open-grove.com/library/index.html" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J2MFKQN4EV"></script>
 <script>
@@ -33,14 +43,16 @@ src="https://www.facebook.com/tr?id=29081718441491025&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{
   --bg:#f3ecda; --bg2:#eadfc2; --card:#fdf8ea; --ink:#1d2b1f; --ink-soft:#3f4f3d;
   --moss:#2e4a33; --moss-deep:#1c3121; --fern:#5a7d5e; --sage:#e2dcc0;
   --amber:#8a5a0e; --amber-bright:#b97a14; --clay:#8a4526; --line:#c9b98d;
   --gold-line:#a8853f; --shadow:0 10px 30px rgba(30,53,36,.16);
-  --radius:14px; --focus:#0b5fff;
+  --radius:14px; --focus:#0b5fff; --nav-h:195px;
   --parchment-noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
 }
 @media (prefers-color-scheme: dark){
@@ -66,7 +78,7 @@ html.hc .fchip[aria-pressed="true"]{background:#000;border-color:#000;color:#fff
 html.hc .seg button[aria-pressed="true"]{background:#000;color:#fff}
 html.hc .btn-moss{background:#003300;color:#fff}
 *{box-sizing:border-box}
-html{font-size:100%;scroll-behavior:smooth}
+html{font-size:100%;scroll-behavior:smooth;scroll-padding-top:var(--nav-h)}
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{animation:none!important; transition:none!important} }
 body{margin:0;color:var(--ink);font-family:"Alegreya", Georgia, serif;font-size:1.125rem;line-height:1.65;
   background-color:var(--bg);
@@ -97,6 +109,7 @@ nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb, var(--bg) 94%
 .nav-toggle{display:none}
 .nav-menu{display:flex;align-items:center;gap:14px;margin-left:auto}
 @media (max-width:840px){
+  :root{--nav-h:73px}
   .nav-in{gap:8px;padding:6px 14px}
   .nav-brand{font-size:1.15rem}
   .nav-toggle{display:inline-flex;align-items:center;gap:6px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:10px 14px;min-height:48px;font-family:"Alegreya Sans",sans-serif;font-size:.94rem;font-weight:700;cursor:pointer}
@@ -260,7 +273,7 @@ figcaption{font-size:.9rem;color:var(--ink-soft);margin-top:8px;font-style:itali
 /* Practice recipes */
 .practice-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:36px;align-items:start;margin-top:8px}
 @media (max-width:840px){ .practice-grid{grid-template-columns:1fr} }
-.practice-grid figure{margin:0;position:sticky;top:84px}
+.practice-grid figure{margin:0;position:sticky;top:var(--nav-h)}
 @media (max-width:840px){ .practice-grid figure{position:static} }
 .practice-grid figure img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%;aspect-ratio:4/3.4;object-fit:cover}
 .recipe{background-color:var(--card);background-image:var(--parchment-noise);background-blend-mode:multiply;border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin-bottom:18px;box-shadow:0 4px 16px rgba(30,53,36,.08)}
@@ -383,14 +396,18 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
     <div class="nav-menu" id="nav-menu">
       <div class="nav-links">
         <a href="../index.html">Home</a>
-        <a href="../shop.html">Shop</a>
-        <a href="index.html">Library</a>
-        <a href="../about.html">About</a>
         <a href="../wheel.html">Wheel of the Year</a>
         <a href="../wisdom.html">Wisdom &amp; Runes</a>
+        <a href="index.html">Library</a>
+        <a href="../community.html">Community</a>
+        <a href="../this-week.html">This Week</a>
+        <a href="../ravens.html">Ravens</a>
         <a href="../keepsakes.html">Keepsakes</a>
         <a href="../share.html">Share a Recipe</a>
-        <a href="../ravens.html#designs">Suggest a Design</a>
+        <a href="../about.html">About</a>
+        <a href="../policies.html">Policies</a>
+        <a href="../shop.html">Shop</a>
+        <a href="../index.html#join">Join</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAkGmgrnLDdnW2NTMyFmON5D89OcG5p64wi_QUcRXA9pnpcg/viewform" target="_blank" rel="noopener">Give feedback</a>
       </div>
       <div class="nav-actions">
@@ -409,6 +426,22 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
       <p>The Library is the grove's reading room &mdash; a quiet corner to look something up, find a book worth your time, or try a short practice and see how it sits. Take your time; there is no hurry on any of these roads.</p>
     </div>
     <div>
+      <h3><a href="wheel-of-the-year-explained.html">Wheel of the Year Explained</a></h3>
+      <p>Eight festivals, one turning year &mdash; what the Wheel is, where it came from, and how to walk it.</p>
+    </div>
+    <div>
+      <h3><a href="beginners-guide-pagan-practice.html">Complete Beginner&rsquo;s Guide to Pagan Practice</a></h3>
+      <p>Starting where you stand &mdash; no tools, no test, no single right way.</p>
+    </div>
+    <div>
+      <h3><a href="rune-meanings.html">Rune Meanings: A Beginner&rsquo;s Guide</a></h3>
+      <p>Twenty-four signs, three families, one old alphabet &mdash; what the runes are, what each one means, and how to start working with them.</p>
+    </div>
+    <div>
+      <h3><a href="elder-futhark.html">The Elder Futhark</a></h3>
+      <p>All twenty-four runes in full &mdash; their history, how to say their names, what the rune poems actually say, and what is modern practice, kept apart.</p>
+    </div>
+    <div>
       <h3><a href="paths.html">Many Paths Through the Grove</a></h3>
       <p>Short, honest introductions to the traditions you&rsquo;ll meet here, each described the way it describes itself.</p>
     </div>
@@ -424,6 +457,10 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
       <h3><a href="glossary.html">Words You&rsquo;ll Hear in the Grove</a></h3>
       <p>Words you&rsquo;ll hear in the grove, with how to say them and where they come from &mdash; filter by tradition to learn one path&rsquo;s vocabulary at a time.</p>
     </div>
+    <div>
+      <h3><a href="editorial-policy.html">Editorial Policy</a></h3>
+      <p>How the grove researches its history, checks its sources, and corrects its mistakes — written down, so you can hold us to it.</p>
+    </div>
   </div>
 </section>
 
@@ -433,7 +470,7 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
     <span><strong style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink)">The Open Grove</strong> — a site for all pagans.</span>
     <span>Shop: <a href="https://opengrovegoods.etsy.com?utm_source=the-open-grove.com&amp;utm_medium=website&amp;utm_campaign=library-index" target="_blank" rel="noopener">OpenGroveGoods on Etsy</a></span>
     <span>Contact: <a href="mailto:hello@the-open-grove.com">hello@the-open-grove.com</a></span>
-    <span>Follow the grove: <a href="https://www.tiktok.com/@occulus72" target="_blank" rel="noopener">TikTok — the shop</a> · <a href="https://www.tiktok.com/@lauraofthegrove" target="_blank" rel="noopener">TikTok — Laura</a> · <a href="https://www.instagram.com/lauraofthegrove/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@OpenGroveGoods" target="_blank" rel="noopener">YouTube</a> · <a href="https://x.com/LauraOfTheGrove" target="_blank" rel="noopener">X</a> · <a href="https://www.threads.net/@lauraofthegrove" target="_blank" rel="noopener">Threads</a></span>
+    <span>Follow the grove: <a href="https://www.tiktok.com/@occulus72" target="_blank" rel="noopener">TikTok — the shop</a> · <a href="https://www.tiktok.com/@lauraofthegrove" target="_blank" rel="noopener">TikTok — Laura</a> · <a href="https://www.instagram.com/lauraofthegrove/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@OpenGroveGoods" target="_blank" rel="noopener">YouTube</a> · <a href="https://x.com/LauraOfTheGrove" target="_blank" rel="noopener">X</a> · <a href="https://www.threads.net/@lauraofthegrove" target="_blank" rel="noopener">Threads</a> · <a href="https://discord.gg/vcFPqbSbyd" target="_blank" rel="noopener">Discord — The Open Grove</a> · <a href="https://www.facebook.com/groups/2456535288212955" target="_blank" rel="noopener">Facebook group</a> · <a href="https://www.pinterest.com/gkeefers/" target="_blank" rel="noopener">Pinterest</a> · <a href="https://www.facebook.com/61596416278828/" target="_blank" rel="noopener">Facebook Page</a></span>
     <span><a href="../policies.html#shipping">Shipping</a> · <a href="../policies.html#returns">Returns</a> · <a href="../policies.html#privacy">Privacy</a> · <a href="../policies.html#accessibility">Accessibility</a> &middot; <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAkGmgrnLDdnW2NTMyFmON5D89OcG5p64wi_QUcRXA9pnpcg/viewform" target="_blank" rel="noopener">Give feedback</a> &middot; <a href="../feedback-form.pdf">Prefer paper? Get the PDF</a></span>
     <span><a href="../wheel.html">Festival dates</a> follow the hemisphere switch on the <a href="../wheel.html">Wheel of the Year</a> page — Northern by default; south of the equator, choose Southern and the wheel turns by six months. <a href="../index.html#top">Moon and season shown for today</a>, wherever you are reading. <a href="../keepsakes.html">Keepsakes</a> are stored only in this browser.</span>
   </div>
@@ -473,6 +510,19 @@ function applyContrast(on){
       btn.setAttribute('aria-expanded', 'false');
     });
   }
+})();
+</script>
+<script>
+/* Header offset: anchor jumps and the sticky figure land below the header.
+   The header wraps to three rows on wide screens, so its height is measured live, not guessed. */
+(function(){
+  var nav = document.querySelector('nav');
+  if(!nav) return;
+  function setH(){ document.documentElement.style.setProperty('--nav-h', (nav.offsetHeight + 12) + 'px'); }
+  window.addEventListener('resize', setH);
+  nav.addEventListener('click', function(){ setH(); setTimeout(setH, 300); });
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(setH); }
+  setH();
 })();
 </script>
 <script>

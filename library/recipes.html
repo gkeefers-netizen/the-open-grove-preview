@@ -6,6 +6,16 @@
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:," />
 <title>Ritual Recipes — Begin Where You Stand — The Open Grove</title>
+<meta name="description" content="Ritual recipes to begin where you stand: no tools to buy, no permission to seek. Each takes about five minutes — filter by tradition." />
+<meta property="og:title" content="Ritual Recipes — Begin Where You Stand — The Open Grove" />
+<meta property="og:description" content="Ritual recipes to begin where you stand: no tools to buy, no permission to seek. Each takes about five minutes — filter by tradition." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://the-open-grove.com/library/recipes.html" />
+<meta property="og:image" content="https://the-open-grove.com/images/hero-stone-circle.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ritual Recipes — Begin Where You Stand — The Open Grove" />
+<meta name="twitter:description" content="Ritual recipes to begin where you stand: no tools to buy, no permission to seek. Each takes about five minutes — filter by tradition." />
+<link rel="canonical" href="https://the-open-grove.com/library/recipes.html" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J2MFKQN4EV"></script>
 <script>
@@ -33,14 +43,16 @@ src="https://www.facebook.com/tr?id=29081718441491025&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{
   --bg:#f3ecda; --bg2:#eadfc2; --card:#fdf8ea; --ink:#1d2b1f; --ink-soft:#3f4f3d;
   --moss:#2e4a33; --moss-deep:#1c3121; --fern:#5a7d5e; --sage:#e2dcc0;
   --amber:#8a5a0e; --amber-bright:#b97a14; --clay:#8a4526; --line:#c9b98d;
   --gold-line:#a8853f; --shadow:0 10px 30px rgba(30,53,36,.16);
-  --radius:14px; --focus:#0b5fff;
+  --radius:14px; --focus:#0b5fff; --nav-h:195px;
   --parchment-noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
 }
 @media (prefers-color-scheme: dark){
@@ -66,7 +78,7 @@ html.hc .fchip[aria-pressed="true"]{background:#000;border-color:#000;color:#fff
 html.hc .seg button[aria-pressed="true"]{background:#000;color:#fff}
 html.hc .btn-moss{background:#003300;color:#fff}
 *{box-sizing:border-box}
-html{font-size:100%;scroll-behavior:smooth}
+html{font-size:100%;scroll-behavior:smooth;scroll-padding-top:var(--nav-h)}
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{animation:none!important; transition:none!important} }
 body{margin:0;color:var(--ink);font-family:"Alegreya", Georgia, serif;font-size:1.125rem;line-height:1.65;
   background-color:var(--bg);
@@ -97,6 +109,7 @@ nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb, var(--bg) 94%
 .nav-toggle{display:none}
 .nav-menu{display:flex;align-items:center;gap:14px;margin-left:auto}
 @media (max-width:840px){
+  :root{--nav-h:73px}
   .nav-in{gap:8px;padding:6px 14px}
   .nav-brand{font-size:1.15rem}
   .nav-toggle{display:inline-flex;align-items:center;gap:6px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:10px 14px;min-height:48px;font-family:"Alegreya Sans",sans-serif;font-size:.94rem;font-weight:700;cursor:pointer}
@@ -260,7 +273,7 @@ figcaption{font-size:.9rem;color:var(--ink-soft);margin-top:8px;font-style:itali
 /* Practice recipes */
 .practice-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:36px;align-items:start;margin-top:8px}
 @media (max-width:840px){ .practice-grid{grid-template-columns:1fr} }
-.practice-grid figure{margin:0;position:sticky;top:84px}
+.practice-grid figure{margin:0;position:sticky;top:var(--nav-h)}
 @media (max-width:840px){ .practice-grid figure{position:static} }
 .practice-grid figure img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%;aspect-ratio:4/3.4;object-fit:cover}
 .recipe{background-color:var(--card);background-image:var(--parchment-noise);background-blend-mode:multiply;border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin-bottom:18px;box-shadow:0 4px 16px rgba(30,53,36,.08)}
@@ -383,14 +396,18 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
     <div class="nav-menu" id="nav-menu">
       <div class="nav-links">
         <a href="../index.html">Home</a>
-        <a href="../shop.html">Shop</a>
-        <a href="index.html">Library</a>
-        <a href="../about.html">About</a>
         <a href="../wheel.html">Wheel of the Year</a>
         <a href="../wisdom.html">Wisdom &amp; Runes</a>
+        <a href="index.html">Library</a>
+        <a href="../community.html">Community</a>
+        <a href="../this-week.html">This Week</a>
+        <a href="../ravens.html">Ravens</a>
         <a href="../keepsakes.html">Keepsakes</a>
         <a href="../share.html">Share a Recipe</a>
-        <a href="../ravens.html#designs">Suggest a Design</a>
+        <a href="../about.html">About</a>
+        <a href="../policies.html">Policies</a>
+        <a href="../shop.html">Shop</a>
+        <a href="../index.html#join">Join</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAkGmgrnLDdnW2NTMyFmON5D89OcG5p64wi_QUcRXA9pnpcg/viewform" target="_blank" rel="noopener">Give feedback</a>
       </div>
       <div class="nav-actions">
@@ -468,7 +485,7 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
 
         <article class="recipe" data-traditions="norse general" data-quick="about5">
           <div class="recipe-head"><div class="num">3</div><div><h3>Make an offering — a small blót<span class="pron">BLOHT</span></h3><div class="recipe-meta"><span class="tag tag-time">About 5 minutes</span><span class="tag">Norse · Heathen</span><span class="tag">General</span></div></div></div>
-          <p class="lead">A gift for a gift — the oldest law of the grove. In Heathen practice this is a blót: food or drink given to gods, ancestors, or land spirits, and shared by the people present.</p>
+          <p class="lead">A gift for a gift — the first law of the grove. In Heathen practice this is a blót: food or drink given to gods, ancestors, or land spirits, and shared by the people present.</p>
           <h4>You'll need</h4>
           <ul class="needs"><li>A cup of something good — ale, juice, coffee, clean water</li><li>A small bite of food — bread is traditional</li><li>Your altar, a tree's roots, or a garden spot</li></ul>
           <h4>Steps</h4>
@@ -484,7 +501,7 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
 
         <article class="recipe" data-traditions="general norse celtic" data-quick="about5">
           <div class="recipe-head"><div class="num">4</div><div><h3>Honor your dead</h3><div class="recipe-meta"><span class="tag tag-time">About 5 minutes</span><span class="tag">General · all paths</span><span class="tag">Norse</span><span class="tag">Celtic</span></div></div></div>
-          <p class="lead">Nearly every pagan tradition on earth begins here — the ancestors are the oldest altar there is. Say their names, and they stay part of the household.</p>
+          <p class="lead">Most pagan traditions begin here — the ancestors are the oldest altar most of us have. Say their names, and they stay part of the household.</p>
           <h4>You'll need</h4>
           <ul class="needs"><li>One photograph, or an object that was theirs</li><li>A candle</li><li>One story about them that you actually remember</li></ul>
           <h4>Steps</h4>
@@ -499,7 +516,7 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
 
         <article class="recipe" data-traditions="wiccan general" data-quick="about5">
           <div class="recipe-head"><div class="num">5</div><div><h3>Full-moon esbat<span class="pron">ESS-bat</span> — moon water &amp; one intention</h3><div class="recipe-meta"><span class="tag tag-time">About 5 minutes</span><span class="tag">Wiccan</span><span class="tag">General</span></div></div></div>
-          <p class="lead">An esbat is the Wiccan observance of the moon, usually at the full moon — the monthly counterpart to the eight solar sabbats. <a href="../index.html#t-esbat">The tracker at the top of this page</a> tells you the next one. This is its smallest honest form.</p>
+          <p class="lead">An esbat is the Wiccan observance of the moon, usually at the full moon — the monthly counterpart to the eight solar sabbats. <a href="../index.html#t-esbat">The tracker on the home page</a> tells you the next one. This is its smallest honest form.</p>
           <h4>You'll need</h4>
           <ul class="needs"><li>A clean jar or bottle of water</li><li>A windowsill or doorstep the moon can reach</li><li>Paper and pencil</li></ul>
           <h4>Steps</h4>
@@ -509,7 +526,7 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
             <li><strong>Write one intention (2 min).</strong> One sentence, present tense, about what this moon cycle is for: “This cycle, I finish —” Keep it where you'll see it.</li>
             <li><strong>Close the circle (1 min).</strong> Hands on the jar, one breath, “So it is.” In the morning, drink a sip or water a plant with it — intention, taken in.</li>
           </ol>
-          <p class="close-line">Check the next esbat in the <a href="../index.html#t-esbat">today bar</a> above and put it on your calendar now, while you're thinking of it.</p>
+          <p class="close-line">Check the next esbat in the <a href="../index.html#t-esbat">today bar on the home page</a> and put it on your calendar now, while you're thinking of it.</p>
         </article>
 
         <article class="recipe" data-traditions="general wiccan celtic norse" data-quick="about5 fewsupplies">
@@ -519,7 +536,7 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
           <ul class="needs"><li><a href="../wheel.html">The Wheel of the Year</a> — and the next festival's date</li><li>Your calendar</li><li>One simple plan: a meal, a candle, or a sunset walk</li></ul>
           <h4>Steps</h4>
           <ol class="steps">
-            <li><strong>Find the next turning (1 min).</strong> Use the <a href="../index.html#top">today bar</a>: note the next festival and the next full moon, with dates.</li>
+            <li><strong>Find the next turning (1 min).</strong> Use the <a href="../index.html#top">today bar on the home page</a>: note the next festival and the next full moon, with dates.</li>
             <li><strong>Put it on the calendar (1 min).</strong> Both of them, right now — a festival you have to remember is a festival you'll miss.</li>
             <li><strong>Choose one small keeping (2 min).</strong> Pick a single way from the <a href="../wheel.html#festival-panel">festival panel on the Wheel of the Year page</a> — the dumb supper at Samhain<span class="pron">SOW-in</span>, seeds at Ostara<span class="pron">oh-STAR-ah</span>, bread at Lughnasadh<span class="pron">LOO-nah-sah</span>. One, done fully.</li>
             <li><strong>Tell one person (1 min).</strong> “I'm keeping Yule with a candle at dusk — join me?” Festivals grow by invitation.</li>
@@ -528,7 +545,7 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
         </article>
         <article class="recipe" data-traditions="norse general" data-quick="about5 quiet fewsupplies">
           <div class="recipe-head"><div class="num">7</div><div><h3>Draw one rune for the day</h3><div class="recipe-meta"><span class="tag tag-time">About 5 minutes</span><span class="tag">Norse · Heathen</span><span class="tag">General</span><span class="tag">Can be done quietly</span><span class="tag">Few supplies</span></div></div></div>
-          <p class="lead">One rune, drawn before the day gets going, is an old way to set the tone — not a fortune, just a word to carry. The <a href="../wisdom.html#rune-card">rune draw on the Wisdom &amp; Runes page</a> works the same way, if you have no set of your own.</p>
+          <p class="lead">One rune, drawn before the day gets going, is a modern way to set the tone — the old root is Tacitus's lot-casting, and the daily draw is ours. The <a href="../wisdom.html#rune-card">rune draw on the Wisdom &amp; Runes page</a> works the same way, if you have no set of your own.</p>
           <h4>You'll need</h4>
           <ul class="needs"><li>A rune set, or the rune draw on the Wisdom &amp; Runes page</li><li>A flat surface</li></ul>
           <h4>Steps</h4>
@@ -572,7 +589,7 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
         </article>
         <article class="recipe" data-traditions="hellenic" data-quick="about5 quiet fewsupplies">
           <div class="recipe-head"><div class="num">10</div><div><h3>A small libation</h3><div class="recipe-meta"><span class="tag tag-time">About 5 minutes</span><span class="tag">Hellenic</span><span class="tag">Can be done quietly</span><span class="tag">Few supplies</span></div></div></div>
-          <p class="lead">In Greek household practice, a libation is a small pour of liquid given to the gods — Hestia first and last, since the hearth is where every offering begins and ends. Water is always enough.</p>
+          <p class="lead">In Greek household practice, a libation is a small pour of liquid given to the gods — Hestia receives the first and the last of the offering, the old rule from the hymn to Hestia, kept in every rite. Water is always enough.</p>
           <h4>You'll need</h4>
           <ul class="needs"><li>A small cup</li><li>A little water, wine, or juice</li><li>An outdoor spot, a plant, or a sink</li></ul>
           <h4>Steps</h4>
@@ -600,7 +617,7 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
         </article>
         <article class="recipe" data-traditions="irish" data-quick="about5 quiet">
           <div class="recipe-head"><div class="num">12</div><div><h3>Light a candle for Brigid</h3><div class="recipe-meta"><span class="tag tag-time">About 5 minutes</span><span class="tag">Irish</span><span class="tag">Can be done quietly</span></div></div></div>
-          <p class="lead">Brigid<span class="pron">BREE-jid</span>, daughter of the Dagda, is the Irish goddess of hearth, forge, and poetry — her flame at Kildare was kept for centuries. A candle and a bowl of water is the smallest way to honor her at home.</p>
+          <p class="lead">Brigid<span class="pron">BREE-id</span>, daughter of the Dagda, is the Irish goddess of hearth, forge, and poetry — her flame at Kildare was kept for centuries. A candle and a bowl of water is the smallest way to honor her at home.</p>
           <h4>You'll need</h4>
           <ul class="needs"><li>A white or yellow candle in a safe, stable holder</li><li>A small bowl of water</li><li>A small offering — bread, honey, or milk</li></ul>
           <h4>Steps</h4>
@@ -669,7 +686,7 @@ footer a{min-height:48px;display:inline-flex;align-items:center}
     <span><strong style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink)">The Open Grove</strong> — a site for all pagans.</span>
     <span>Shop: <a href="https://opengrovegoods.etsy.com?utm_source=the-open-grove.com&amp;utm_medium=website&amp;utm_campaign=library-recipes" target="_blank" rel="noopener">OpenGroveGoods on Etsy</a></span>
     <span>Contact: <a href="mailto:hello@the-open-grove.com">hello@the-open-grove.com</a></span>
-    <span>Follow the grove: <a href="https://www.tiktok.com/@occulus72" target="_blank" rel="noopener">TikTok — the shop</a> · <a href="https://www.tiktok.com/@lauraofthegrove" target="_blank" rel="noopener">TikTok — Laura</a> · <a href="https://www.instagram.com/lauraofthegrove/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@OpenGroveGoods" target="_blank" rel="noopener">YouTube</a> · <a href="https://x.com/LauraOfTheGrove" target="_blank" rel="noopener">X</a> · <a href="https://www.threads.net/@lauraofthegrove" target="_blank" rel="noopener">Threads</a></span>
+    <span>Follow the grove: <a href="https://www.tiktok.com/@occulus72" target="_blank" rel="noopener">TikTok — the shop</a> · <a href="https://www.tiktok.com/@lauraofthegrove" target="_blank" rel="noopener">TikTok — Laura</a> · <a href="https://www.instagram.com/lauraofthegrove/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@OpenGroveGoods" target="_blank" rel="noopener">YouTube</a> · <a href="https://x.com/LauraOfTheGrove" target="_blank" rel="noopener">X</a> · <a href="https://www.threads.net/@lauraofthegrove" target="_blank" rel="noopener">Threads</a> · <a href="https://discord.gg/vcFPqbSbyd" target="_blank" rel="noopener">Discord — The Open Grove</a> · <a href="https://www.facebook.com/groups/2456535288212955" target="_blank" rel="noopener">Facebook group</a> · <a href="https://www.pinterest.com/gkeefers/" target="_blank" rel="noopener">Pinterest</a> · <a href="https://www.facebook.com/61596416278828/" target="_blank" rel="noopener">Facebook Page</a></span>
     <span><a href="../policies.html#shipping">Shipping</a> · <a href="../policies.html#returns">Returns</a> · <a href="../policies.html#privacy">Privacy</a> · <a href="../policies.html#accessibility">Accessibility</a> &middot; <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAkGmgrnLDdnW2NTMyFmON5D89OcG5p64wi_QUcRXA9pnpcg/viewform" target="_blank" rel="noopener">Give feedback</a> &middot; <a href="../feedback-form.pdf">Prefer paper? Get the PDF</a></span>
     <span><a href="../wheel.html">Festival dates</a> follow the hemisphere switch on the <a href="../wheel.html">Wheel of the Year</a> page — Northern by default; south of the equator, choose Southern and the wheel turns by six months. <a href="../index.html#top">Moon and season shown for today</a>, wherever you are reading. <a href="../keepsakes.html">Keepsakes</a> are stored only in this browser.</span>
   </div>
@@ -709,6 +726,19 @@ function applyContrast(on){
       btn.setAttribute('aria-expanded', 'false');
     });
   }
+})();
+</script>
+<script>
+/* Header offset: anchor jumps and the sticky figure land below the header.
+   The header wraps to three rows on wide screens, so its height is measured live, not guessed. */
+(function(){
+  var nav = document.querySelector('nav');
+  if(!nav) return;
+  function setH(){ document.documentElement.style.setProperty('--nav-h', (nav.offsetHeight + 12) + 'px'); }
+  window.addEventListener('resize', setH);
+  nav.addEventListener('click', function(){ setH(); setTimeout(setH, 300); });
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(setH); }
+  setH();
 })();
 </script>
 <script>
