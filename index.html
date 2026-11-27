@@ -169,7 +169,7 @@ nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb, var(--bg) 94%
 
 /* Today strip — stone texture */
 .today{background-color:var(--moss-deep);background-image:var(--parchment-noise), radial-gradient(ellipse 420px 120px at 12% 0%, rgba(255,255,255,.07), transparent 70%), radial-gradient(ellipse 520px 160px at 88% 110%, rgba(0,0,0,.28), transparent 70%);background-blend-mode:overlay, normal, normal;color:#efe9d2;border-top:3px solid var(--gold-line)}
-.today-in{max-width:1120px;margin:0 auto;padding:20px 20px 22px;display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.today-in{max-width:1120px;margin:0 auto;padding:20px 20px 22px;display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
 .today .cell{border-left:1px solid rgba(233,226,200,.28);padding-left:16px;min-width:0}
 .today .cell:first-child{border-left:none;padding-left:0}
 .today .k{font-family:"Alegreya Sans",sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#e3c87e}
@@ -468,13 +468,14 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
 
 <div class="today" role="region" aria-label="Today in the turning year">
   <div class="today-in">
-    <div class="cell"><div class="k">Today</div><div class="v" id="t-date">—</div><div class="s" id="t-season">—</div></div>
-    <div class="cell"><div class="k">The Moon</div><div class="v" id="t-moon">—</div><div class="s" id="t-moon-s">—</div></div>
-    <div class="cell"><div class="k">Next full moon · Esbat</div><div class="v" id="t-esbat">—</div><div class="s" id="t-esbat-s">—</div></div>
-    <div class="cell"><div class="k">Season of</div><div class="v" id="t-fest">—</div><div class="s" id="t-fest-s">—</div></div>
-    <div class="cell"><div class="k">Next festival</div><div class="v" id="t-next">—</div><div class="s" id="t-next-s">—</div></div>
+    <div class="cell"><div class="k">Today</div><div class="v" id="t-date">Friday, November 27, 2026</div><div class="s" id="t-season">Autumn, the harvest half</div></div>
+    <div class="cell"><div class="k">The Moon</div><div class="v" id="t-moon">Waning Gibbous</div><div class="s" id="t-moon-s">About 92% lit · 17.5 days into the cycle</div></div>
+    <div class="cell"><div class="k">Next full moon · Esbat</div><div class="v" id="t-esbat">Cold Moon</div><div class="s" id="t-esbat-s">Wed, December 23 · in 26 days — plan your esbat now.</div></div>
+    <div class="cell"><div class="k">Season of</div><div class="v" id="t-fest">Samhain</div><div class="s" id="t-fest-s">The last harvest &amp; the thinning veil</div></div>
+    <div class="cell"><div class="k">Next festival</div><div class="v" id="t-next">Yule</div><div class="s" id="t-next-s">Around Dec 21 · Winter Solstice · in 24 days</div></div>
+    <div class="cell"><div class="k">Countdown</div><div class="v" id="t-count">24 days</div><div class="s" id="t-count-s">until Yule · Monday, December 21, 2026</div></div>
   </div>
-  <noscript><p style="text-align:center;font-size:.95rem;padding:6px 20px 0">The date, moon, and next festival above are filled in by a small script on this page — with JavaScript off they stay blank. The same dates are on the <a href="wheel.html">Wheel of the Year</a> page.</p></noscript>
+  <noscript><p style="text-align:center;font-size:.95rem;padding:6px 20px 0">The dates above are as of Friday, November 27, 2026 — written into this page when it was last updated. With JavaScript on, the small script on this page refreshes them daily. The full festival calendar is on the <a href="wheel.html">Wheel of the Year</a> page.</p></noscript>
   <div class="today-actions">
     <button class="btn btn-gold btn-sm" id="focus-open-3" type="button">Focus space — moon &amp; verse only</button>
     <a class="btn btn-ghost btn-sm" href="library/recipes.html">Plan with the ritual recipes</a>
@@ -848,6 +849,14 @@ function fillToday(){
   var nx = nextFestival(now);
   document.getElementById('t-next').textContent = nx.f.name;
   document.getElementById('t-next-s').textContent = festDates(nx.f) + ' · in ' + nx.days + (nx.days===1?' day':' days');
+  var cd = document.getElementById('t-count');
+  if (cd) cd.textContent = nx.days + (nx.days===1?' day':' days');
+  var cds = document.getElementById('t-count-s');
+  if (cds){
+    var fd = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    fd.setDate(fd.getDate() + nx.days);
+    cds.textContent = 'until ' + nx.f.name + ' · ' + fd.toLocaleDateString(undefined, { weekday:'long', month:'long', day:'numeric', year:'numeric' });
+  }
 }
 fillToday();
 selectFestival(todayFestIdx);
