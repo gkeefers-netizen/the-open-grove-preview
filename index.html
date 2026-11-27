@@ -147,6 +147,11 @@ nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb, var(--bg) 94%
 #letter-form input[type="email"]{flex:1 1 260px;min-height:52px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-family:"Alegreya Sans",sans-serif;font-size:1rem;padding:13px 20px}
 #letter-form input[type="email"]::placeholder{color:var(--ink-soft)}
 #letter-note{margin:12px 0 0;font-size:.95rem;color:var(--ink-soft)}
+/* Starter Kit signup */
+#kit-form{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch;max-width:560px}
+#kit-form input[type="email"]{flex:1 1 260px;min-height:52px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-family:"Alegreya Sans",sans-serif;font-size:1rem;padding:13px 20px}
+#kit-form input[type="email"]::placeholder{color:var(--ink-soft)}
+#kit-note{margin:12px 0 0;font-size:.95rem;color:var(--ink-soft)}
 .mic-status{margin:14px 0 0;color:var(--ink-soft)}
 .mic-text{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0;white-space:pre-wrap}
 .mic-note{margin:10px 0 0;font-size:.92rem;color:var(--ink-soft)}
@@ -629,6 +634,26 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
   </div>
 </section>
 
+<!-- STARTER KIT -->
+<section class="tight" id="starter-kit">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="rule"></div>
+      <h2>Start with the Beginner Pagan Starter Kit</h2>
+      <p>A free guide — everything you need to start practicing, in one place: the turning year, a first altar, a daily practice, the runes, and a first month to walk through it all. Leave your email and the guide is on its way to your inbox.</p>
+    </div>
+    <div style="margin-top:22px">
+      <form id="kit-form" novalidate>
+        <label class="visually-hidden" for="kit-email">Email address</label>
+        <input type="email" id="kit-email" name="email" placeholder="Your email address" autocomplete="email" required>
+        <button class="btn btn-moss" type="submit">Send me the Starter Kit</button>
+      </form>
+      <p id="kit-note" aria-live="polite"></p>
+      <p class="shop-note">Free to keep, share, and print. No spam, and you can leave anytime. <a href="starter-kit.html">More about the guide &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
 <section class="tight" id="join">
   <div class="wrap">
     <div class="sec-head">
@@ -704,6 +729,34 @@ html.hc .hero-glow,html.hc .hero-embers{display:none}
     }).then(function(res){
       if (!res.ok) throw new Error('subscribe failed');
       note.textContent = 'You\'re in — watch your inbox for the welcome letter.';
+      form.reset();
+    }).catch(function(){
+      note.textContent = 'Something went wrong — please try again, or write to us through the shop on Etsy.';
+    });
+  });
+})();
+/* ---------- Starter Kit signup (Klaviyo) ---------- */
+(function(){
+  var form = document.getElementById('kit-form');
+  if (!form) return;
+  var emailInput = document.getElementById('kit-email');
+  var note = document.getElementById('kit-note');
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var email = (emailInput.value || '').trim();
+    if (!email || email.indexOf('@') < 1 || email.indexOf('.') < 0) {
+      note.textContent = 'Please enter a valid email address.';
+      emailInput.focus();
+      return;
+    }
+    note.textContent = 'Sending…';
+    fetch('https://a.klaviyo.com/client/subscriptions/?company_id=XxCFrT', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json', 'revision': '2024-10-15'},
+      body: JSON.stringify({data:{type:'subscription',attributes:{profile:{data:{type:'profile',attributes:{email:email}}},custom_source:'Starter Kit homepage'},relationships:{list:{data:{type:'list',id:'VWn4Gd'}}}}})
+    }).then(function(res){
+      if (!res.ok) throw new Error('subscribe failed');
+      note.textContent = 'Your Starter Kit is on its way — check your inbox.';
       form.reset();
     }).catch(function(){
       note.textContent = 'Something went wrong — please try again, or write to us through the shop on Etsy.';
